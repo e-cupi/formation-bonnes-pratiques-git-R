@@ -52,7 +52,3 @@ L'activité du statisticien / *datascientist* tend à se rapprocher de celle du 
 - `Git` est un [**standard atteignable**]{.orange} et [**efficient**]{.orange}
 
 . . .
-
-::: {.callout-note}
-**Quel socle de bonnes pratiques pour les projets statistiques en `R` ?**
-:::
