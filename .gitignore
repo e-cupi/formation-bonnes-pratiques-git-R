@@ -12,3 +12,4 @@ slides/_intro_files
 _targets/
 /.quarto/
 site_libs
+_site
