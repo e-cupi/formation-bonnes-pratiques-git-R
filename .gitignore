@@ -3,11 +3,11 @@
 .RData
 .Ruserdata
 .Rbuildignore
-.Rproj
-.html
+*.Rproj
+*.html
 slides/index_files
 slides/formation_light_files
 slides/formation_full_files
 _targets/
 /.quarto/
-/.intro_files/
+slides/_intro_files
