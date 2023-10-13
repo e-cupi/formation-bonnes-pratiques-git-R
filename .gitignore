@@ -11,4 +11,4 @@ slides/formation_full_files
 slides/_intro_files
 _targets/
 /.quarto/
-
+site_libs
