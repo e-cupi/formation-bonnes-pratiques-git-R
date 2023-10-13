@@ -7,11 +7,11 @@ pour en finir avec ça :
 ![](img/fichiers_multiples.png)
 
 
-## :one: Archiver son code proprement {auto-animate=true}
+<!-- ## :one: Archiver son code proprement {auto-animate=true} -->
 
-ou ça :
+<!-- ou ça : -->
 
-![](img/finalfinal.png){fig-align="center"}
+<!-- ![](img/finalfinal.png){fig-align="center"} -->
 
 
 ## :one: Archiver son code proprement {auto-animate=true}
@@ -51,7 +51,7 @@ Source : [ThinkR](https://thinkr.fr/travailler-avec-git-via-rstudio-et-versionne
 
 ## :two: Voyager dans le temps (de votre projet)
 
-![](img/historique_utilitr.png){fig-align="center"}
+![](img/historique_inflation_inter.png){fig-align="center"}
 
 ## :three: Une collaboration simplifiée et efficace {auto-animate=true}
 
@@ -63,7 +63,7 @@ Source : [specbee.com](https://www.specbee.com)
 
 ## :three: Une collaboration simplifiée et efficace {auto-animate=true}
 
-Qui permet l'expérimentation en toute sécurité
+Qui permet l'expérimentation en toute sécurité - les **branches** :
 
 ![](img/branches.png){fig-align="center"}
 
