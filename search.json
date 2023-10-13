@@ -67,18 +67,11 @@
     "href": "slides/light.html#archiver-son-code-proprement-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "1️⃣ Archiver son code proprement",
-    "text": "1️⃣ Archiver son code proprement\nou ça :"
+    "text": "1️⃣ Archiver son code proprement\nou encore ça :\nprior &lt;- read_csv(prior_path)\nprior &lt;- prior %&gt;%\n    select(id, proba_inter, proba_build, proba_rfl) %&gt;%\n    separate(id, into = c('nidt', 'grid_id'), sep = \":\") %&gt;%\n    group_by(nidt) %&gt;%\n    mutate(\n        proba_build = proba_build/sum(proba_build),\n        proba_rfl = proba_rfl/sum(proba_rfl),\n        ) %&gt;%\n    unite(col = \"id\", nidt, grid_id, sep = \":\")\n\n# Test\n# prior_test &lt;- prior %&gt;%\n#    mutate(\n#        proba_inter = round(proba_inter, 4)\n#        proba_build = round(proba_build, 4)\n#        proba_rfl = round(proba_rfl, 4)\n#    )\n\nwrite_csv(prior_round, \"~/prior.csv\")"
   },
   {
     "objectID": "slides/light.html#archiver-son-code-proprement-2",
     "href": "slides/light.html#archiver-son-code-proprement-2",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "1️⃣ Archiver son code proprement",
-    "text": "1️⃣ Archiver son code proprement\nou encore ça :\nprior &lt;- read_csv(prior_path)\nprior &lt;- prior %&gt;%\n    select(id, proba_inter, proba_build, proba_rfl) %&gt;%\n    separate(id, into = c('nidt', 'grid_id'), sep = \":\") %&gt;%\n    group_by(nidt) %&gt;%\n    mutate(\n        proba_build = proba_build/sum(proba_build),\n        proba_rfl = proba_rfl/sum(proba_rfl),\n        ) %&gt;%\n    unite(col = \"id\", nidt, grid_id, sep = \":\")\n\n# Test\n# prior_test &lt;- prior %&gt;%\n#    mutate(\n#        proba_inter = round(proba_inter, 4)\n#        proba_build = round(proba_build, 4)\n#        proba_rfl = round(proba_rfl, 4)\n#    )\n\nwrite_csv(prior_round, \"~/prior.csv\")"
-  },
-  {
-    "objectID": "slides/light.html#archiver-son-code-proprement-3",
-    "href": "slides/light.html#archiver-son-code-proprement-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "1️⃣ Archiver son code proprement",
     "text": "1️⃣ Archiver son code proprement\nPour arriver à ça :\n\n\n\n\n\nSource : ThinkR"
@@ -102,7 +95,7 @@
     "href": "slides/light.html#une-collaboration-simplifiée-et-efficace-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "3️⃣ Une collaboration simplifiée et efficace",
-    "text": "3️⃣ Une collaboration simplifiée et efficace\nQui permet l’expérimentation en toute sécurité\n\nSource : lutece.paris.fr"
+    "text": "3️⃣ Une collaboration simplifiée et efficace\nQui permet l’expérimentation en toute sécurité - les branches :\n\nSource : lutece.paris.fr"
   },
   {
     "objectID": "slides/light.html#une-collaboration-simplifiée-et-efficace-2",
@@ -151,7 +144,7 @@
     "href": "slides/light.html#concepts",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Concepts",
-    "text": "Concepts\nGit, GitHub, GitLab… quelles différences ?\n\n\nGit est un logiciel ;\nUtilisation en ligne de commandes\nDifférentes interfaces graphiques (RStudio, VS Code…)"
+    "text": "Concepts\nGit, GitHub, GitLab… quelles différences ?\n\n\nGit est un logiciel ;\nUtilisation en ligne de commandes\nDifférentes interfaces graphiques (RStudio, Sublime Merge, VS Code…)"
   },
   {
     "objectID": "slides/light.html#concepts-1",
@@ -550,18 +543,11 @@
     "href": "slides/complete.html#archiver-son-code-proprement-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "1️⃣ Archiver son code proprement",
-    "text": "1️⃣ Archiver son code proprement\nou ça :"
+    "text": "1️⃣ Archiver son code proprement\nou encore ça :\nprior &lt;- read_csv(prior_path)\nprior &lt;- prior %&gt;%\n    select(id, proba_inter, proba_build, proba_rfl) %&gt;%\n    separate(id, into = c('nidt', 'grid_id'), sep = \":\") %&gt;%\n    group_by(nidt) %&gt;%\n    mutate(\n        proba_build = proba_build/sum(proba_build),\n        proba_rfl = proba_rfl/sum(proba_rfl),\n        ) %&gt;%\n    unite(col = \"id\", nidt, grid_id, sep = \":\")\n\n# Test\n# prior_test &lt;- prior %&gt;%\n#    mutate(\n#        proba_inter = round(proba_inter, 4)\n#        proba_build = round(proba_build, 4)\n#        proba_rfl = round(proba_rfl, 4)\n#    )\n\nwrite_csv(prior_round, \"~/prior.csv\")"
   },
   {
     "objectID": "slides/complete.html#archiver-son-code-proprement-2",
     "href": "slides/complete.html#archiver-son-code-proprement-2",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "1️⃣ Archiver son code proprement",
-    "text": "1️⃣ Archiver son code proprement\nou encore ça :\nprior &lt;- read_csv(prior_path)\nprior &lt;- prior %&gt;%\n    select(id, proba_inter, proba_build, proba_rfl) %&gt;%\n    separate(id, into = c('nidt', 'grid_id'), sep = \":\") %&gt;%\n    group_by(nidt) %&gt;%\n    mutate(\n        proba_build = proba_build/sum(proba_build),\n        proba_rfl = proba_rfl/sum(proba_rfl),\n        ) %&gt;%\n    unite(col = \"id\", nidt, grid_id, sep = \":\")\n\n# Test\n# prior_test &lt;- prior %&gt;%\n#    mutate(\n#        proba_inter = round(proba_inter, 4)\n#        proba_build = round(proba_build, 4)\n#        proba_rfl = round(proba_rfl, 4)\n#    )\n\nwrite_csv(prior_round, \"~/prior.csv\")"
-  },
-  {
-    "objectID": "slides/complete.html#archiver-son-code-proprement-3",
-    "href": "slides/complete.html#archiver-son-code-proprement-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "1️⃣ Archiver son code proprement",
     "text": "1️⃣ Archiver son code proprement\nPour arriver à ça :\n\n\n\n\n\nSource : ThinkR"
@@ -585,7 +571,7 @@
     "href": "slides/complete.html#une-collaboration-simplifiée-et-efficace-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "3️⃣ Une collaboration simplifiée et efficace",
-    "text": "3️⃣ Une collaboration simplifiée et efficace\nQui permet l’expérimentation en toute sécurité\n\nSource : lutece.paris.fr"
+    "text": "3️⃣ Une collaboration simplifiée et efficace\nQui permet l’expérimentation en toute sécurité - les branches :\n\nSource : lutece.paris.fr"
   },
   {
     "objectID": "slides/complete.html#une-collaboration-simplifiée-et-efficace-2",
@@ -634,7 +620,7 @@
     "href": "slides/complete.html#concepts",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Concepts",
-    "text": "Concepts\nGit, GitHub, GitLab… quelles différences ?\n\n\nGit est un logiciel ;\nUtilisation en ligne de commandes\nDifférentes interfaces graphiques (RStudio, VS Code…)"
+    "text": "Concepts\nGit, GitHub, GitLab… quelles différences ?\n\n\nGit est un logiciel ;\nUtilisation en ligne de commandes\nDifférentes interfaces graphiques (RStudio, Sublime Merge, VS Code…)"
   },
   {
     "objectID": "slides/complete.html#concepts-1",
