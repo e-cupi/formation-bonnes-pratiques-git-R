@@ -8,6 +8,6 @@
 . . .
 
 - **Trouver de l'aide**:
-    - Pour toute question : le salon Tchap [Insee-Git-Gitlab](https://tchap.gouv.fr/#/room/#InseeGitGitlablPtu8f1Frns:agent.finances.tchap.gouv.fr)
+    - Pour toute question : le salon Tchap [Insee-Git-Gitlab](https://tchap.gouv.fr/#/room/#InseeGitGitlablPtu8f1Frns:agent.finances.tchap.gouv.fr) (:bulb: utilisez Tchap via l'interface _Element_, dispo sur le centre logiciel !)
     - A l'Insee : la [documentation utilisateurs](https://gitlab.insee.fr/infrastructure/lss/ausv3/documentation-utilisateurs/-/wikis/Logiciels/Git) pour l'utilisation de `Git` sur `AUS`
     - Sollicitez vos collègues utilisateurs de `Git` !
