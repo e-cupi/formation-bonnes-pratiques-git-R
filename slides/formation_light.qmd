@@ -62,6 +62,8 @@ aux bonnes pratiques avec `R` et `Git`
 
 {{< include _git_fundamentals.qmd >}}
 
+{{< include _git_collab.qmd >}}
+
 {{< include _git_resources.qmd >}}
 
 
