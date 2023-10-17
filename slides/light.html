@@ -711,29 +711,24 @@ _Workflow_ (version littéraire) :
 - On dit à `Git` que ces fichiers doivent être suivis (`staging area`)
 - On valide les modifications faites en local (`commit`)
 - On soumet les modifications (`push`) après avoir récupéré la version collective (`pull`) -->
+<!-- ## Concepts {auto-animate=true} -->
+<!-- #### _Workflow_ local -->
+<!-- ![](img/areas.png){fig-align="center" height=400} -->
+<!-- Source : [Git Documentation](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) -->
 </section>
 <section id="concepts-3" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
-<h2 data-id="quarto-animate-title">Concepts</h2>
-<h4 data-background-image="background.svg" data-background-size="contain" id="workflow-local"><em>Workflow</em> local</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/areas.png" height="400"></p>
-</figure>
-</div>
-<p>Source : <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">Git Documentation</a></p>
-</section>
-<section id="concepts-4" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Concepts</h2>
 <h4 data-background-image="background.svg" data-background-size="contain" id="workflow-complet"><em>Workflow</em> complet</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/completeworkflow.png" width="500" height="400"></p>
+<p><img data-src="img/completeworkflow_amend.png" width="500" height="400"></p>
 <figcaption>Source : <a href="https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528">itnext.io</a></figcaption>
 </figure>
 </div>
 </section>
 <section id="commandes-essentielles" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Commandes essentielles</h2>
+<p>Quelques exemples <em>en ligne de commande</em></p>
 <p><br></p>
 <table>
 <thead>
@@ -748,7 +743,7 @@ _Workflow_ (version littéraire) :
 <td><code>git clone [url-to-git-repo]</code></td>
 </tr>
 <tr class="even">
-<td>Afficher les changements</td>
+<td>Afficher le statut des changements pour Git</td>
 <td><code>git status</code></td>
 </tr>
 <tr class="odd">
@@ -831,17 +826,20 @@ _Workflow_ (version littéraire) :
 <ul>
 <li class="fragment"><span class="orange"><strong>https</strong></span>
 <ul>
-<li class="fragment"><code>git clone https://github.com/username/projet.git</code></li>
+<li class="fragment">Sur Gitlab : choix “clone with HTTPS”</li>
 <li class="fragment">simple à utiliser</li>
 <li class="fragment">authentification username + password (ou token) à chaque <em>push</em></li>
+<li class="fragment">… sauf si on configure Git de façon à garder en mémoire les identifiants</li>
 </ul></li>
 <li class="fragment"><span class="orange"><strong>ssh</strong></span>
 <ul>
-<li class="fragment"><code>git clone git@github.com:username/projet.git</code></li>
+<li class="fragment">Sur Gitlab : choix “clone with SSH”</li>
 <li class="fragment">(plus) complexe à initialiser</li>
 <li class="fragment">authentification automatique</li>
+<li class="fragment">seul type d’authentification possible sous AUS</li>
 </ul></li>
 </ul>
+<p>Voir les fiches <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git">utilitR</a> sur le sujet.</p>
 </div>
 </section>
 <section id="application-0" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
@@ -1574,99 +1572,27 @@ _Workflow_ (version littéraire) :
 <li><a href="https://github.com/InseeFrLab/DoReMIFaSol">DoReMIFaSol</a></li>
 </ul></li>
 </ul>
-</div>
-</section>
-<section id="faire-de-son-projet-un-package" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2><span class="emoji" data-emoji="five">5️⃣</span> Faire de son projet un <em>package</em></h2>
-<div>
-<ul>
-<li class="fragment">Un <em>package</em> est la forme maximale de <span class="orange"><strong>modularité</strong></span>
-<ul>
-<li class="fragment">Contient des <span class="blue2"><strong>fonctions</strong></span> rangées dans des <span class="blue2"><strong>modules</strong></span></li>
-<li class="fragment">Contient également de la <span class="blue2"><strong>documentation</strong></span>, des <span class="blue2"><strong>tests</strong></span>, des (méta-)données…</li>
-</ul></li>
-<li class="fragment"><span class="orange"><strong>Avantages</strong></span>
-<ul>
-<li class="fragment">Idéal pour favoriser la <span class="blue2"><strong>réutilisation</strong></span> du code</li>
-<li class="fragment">Des <span class="blue2"><strong>outils</strong></span> de développement : <code>devtools</code> et <code>usethis</code></li>
-</ul></li>
-<li class="fragment"><span class="orange"><strong>Inconvénients</strong></span>
-<ul>
-<li class="fragment">Coût de <span class="blue2"><strong>maintenance</strong></span> élevé</li>
-</ul></li>
-</ul>
+<!-- ## :five: Faire de son projet un *package* -->
+<!-- ::: {.incremental} -->
+<!-- - Un *package* est la forme maximale de [**modularité**]{.orange} -->
+<!--   - Contient des [**fonctions**]{.blue2} rangées dans des [**modules**]{.blue2} -->
+<!--   - Contient également de la [**documentation**]{.blue2}, des [**tests**]{.blue2}, des (méta-)données...  -->
+<!-- - [**Avantages**]{.orange} -->
+<!--   - Idéal pour favoriser la [**réutilisation**]{.blue2} du code -->
+<!--   - Des [**outils**]{.blue2} de développement : `devtools` et `usethis` -->
+<!-- - [**Inconvénients**]{.orange} -->
+<!--   - Coût de [**maintenance**]{.blue2} élevé -->
+<!-- ::: -->
 </div>
 </section>
 <section id="ressources-supplémentaires-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Ressources supplémentaires</h2>
 <p><br></p>
 <ul>
-<li>La documentation utilitR sur les <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_rprojects">projets RStudio</a> et les <a href="https://www.book.utilitr.org/01_r_insee/fiche_installer_packages">packages R</a></li>
-<li>La <a href="https://r-pkgs.org/whole-game.html">bible des packages R</a></li>
+<li>La documentation utilitR sur les <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_rprojects">projets RStudio</a> et les <a href="https://www.book.utilitr.org/01_r_insee/fiche_installer_packages">packages R</a> <!-- - La [bible des packages R](https://r-pkgs.org/whole-game.html) --></li>
 <li>Un excellent <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/02-projects/">workshop sur la reproductibilité avec R</a></li>
 </ul>
-</section>
-<section id="application-2-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 2</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Partie 1 : modularisation du projet</strong></p>
-</div>
-<div class="callout-content">
-<div>
-<ol type="1">
-<li class="fragment">Déplacer toutes les fonctions dans un fichier <code>R/functions.R</code>.</li>
-<li class="fragment">Donner à la fonction <code>fonction_de_stat_agregee</code> un nom plus pertinent et des noms d’arguments plus transparents.</li>
-<li class="fragment">Dans <code>script.R</code>, appeler en début de chaîne ces fonctions avec <code>source("R/functions.R", encoding = "UTF-8")</code>.</li>
-<li class="fragment">Documenter la fonction principale au <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">format attendu</a> par <code>roxygen2</code>.</li>
-<li class="fragment">Ajouter les tests unitaires de la fonction comme exemples d’utilisation et les retirer de <code>script.R</code>.</li>
-<li class="fragment">Tester le bon fonctionnement de <code>script.R</code>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="application-2-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 2</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Partie 2 : création d’un <em>package</em></strong></p>
-</div>
-<div class="callout-content">
-<div>
-<ol type="1">
-<li class="fragment">Initialiser un <em>package</em> avec la fonction <code>usethis::create_package()</code></li>
-<li class="fragment">Placer dans le dossier <code>R</code> du <em>package</em> un module <code>stat.R</code> et y copier la fonction de statistique agrégée</li>
-<li class="fragment">Charger le package avec la fonction <code>devtools::load_all()</code> et vérifier que la fonction marche correctement</li>
-<li class="fragment">Remplir le fichier <code>DESCRIPTION</code>. En particulier, spécifier les dépendances nécessaires (<code>Imports</code>) et facultatives (<code>Suggests</code>)</li>
-<li class="fragment">Construire la documentation du <em>package</em> avec la fonction <code>devtools::document()</code>. Où est-elle stockée et sous quel format ?</li>
-<li class="fragment">Vérifier que la documentation de notre fonction est accessible avec <code>?ma_fonction</code></li>
-<li class="fragment">(Facultatif) Initialiser un nouveau projet sur <code>GitHub</code> est y mettre le code du <em>package</em>. Vérifier que le <em>package</em> peut être installé en local avec la fonction <code>devtools::install_github()</code>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Checkpoint</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<ul>
-<li><p><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application2/script.R">script.R</a></p></li>
-<li><p><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application2/functions.R">functions.R</a></p></li>
-<li><p><a href="https://github.com/InseeFrLab/formation-bonnes-pratiques-R/tree/main/package">Package R</a></p></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<p><img data-src="checkpoint.jpg"></p>
-</div>
-</div>
-</div>
+<!-- {{< include applications_r/_application2.qmd >}} -->
 </section></section>
 <section>
 <section id="iii--formats-de-données" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -1728,7 +1654,7 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </section>
-<section id="checkpoint-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
