@@ -189,7 +189,7 @@ _Workflow_ (version littéraire) :
 
 #### _Workflow_ complet
 
-![Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)](img/completeworkflow_amend.png){height="400" width="500"}
+![Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)](img/completeworkflow_amend.png){height="400" width="500"} ; commentaires "maison".
 
 ## Commandes essentielles {auto-animate=true}
 
@@ -238,13 +238,11 @@ un bon `.gitignore`)
 
 :::{.incremental}
 - [**https**]{.orange}
-  - Sur Gitlab : choix "clone with HTTPS"
   - simple à utiliser
   - authentification username + password (ou token) à chaque *push*
   - ... sauf si on configure Git de façon à garder en mémoire les identifiants
 
 - [**ssh**]{.orange}
-  - Sur Gitlab : choix "clone with SSH"
   - (plus) complexe à initialiser
   - authentification automatique 
   - seul type d'authentification possible sous AUS
