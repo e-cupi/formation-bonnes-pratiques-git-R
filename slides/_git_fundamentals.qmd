@@ -297,7 +297,7 @@ __Format des commits__
 
 ::: {.incremental}
 - [**Fréquence**]{.orange}
-    - Aussi souvent que possible
+    - Aussi souvent que possible, quasi autant que ctrl+S
     - Le lot de modifications doit "avoir du sens"
 - [**Messages**]{.orange}
     - Courts et informatifs (comme un titre de mail)
