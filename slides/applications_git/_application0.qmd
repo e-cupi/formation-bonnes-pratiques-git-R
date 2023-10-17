@@ -4,7 +4,7 @@
 :::{.incremental}
 1. Connectez-vous à votre compte [`sur le Gitlab de l'Insee`](https://gitlab.insee.fr/)
 2. Créer un nouveau dépôt dans le sous-groupe `Conjoncture/Formation-Git-bonnes-pratiques-R`. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.
-3. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre espace `Z`):
+3. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre espace `Z`) :
     + `File` → `New project` → `Version Control` → `Git`
 :::
 
