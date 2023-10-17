@@ -722,12 +722,7 @@ _Workflow_ (version littéraire) :
 <section id="concepts-3" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Concepts</h2>
 <h4 data-background-image="background.svg" data-background-size="contain" id="workflow-complet"><em>Workflow</em> complet</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/completeworkflow_amend.png" width="500" height="400"></p>
-<figcaption>Source : <a href="https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528">itnext.io</a></figcaption>
-</figure>
-</div>
+<p><img data-src="img/completeworkflow_amend.png" width="500" height="400" alt="Source : itnext.io"> ; commentaires “maison”.</p>
 </section>
 <section id="commandes-essentielles" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Commandes essentielles</h2>
@@ -829,14 +824,12 @@ _Workflow_ (version littéraire) :
 <ul>
 <li class="fragment"><span class="orange"><strong>https</strong></span>
 <ul>
-<li class="fragment">Sur Gitlab : choix “clone with HTTPS”</li>
 <li class="fragment">simple à utiliser</li>
 <li class="fragment">authentification username + password (ou token) à chaque <em>push</em></li>
 <li class="fragment">… sauf si on configure Git de façon à garder en mémoire les identifiants</li>
 </ul></li>
 <li class="fragment"><span class="orange"><strong>ssh</strong></span>
 <ul>
-<li class="fragment">Sur Gitlab : choix “clone with SSH”</li>
 <li class="fragment">(plus) complexe à initialiser</li>
 <li class="fragment">authentification automatique</li>
 <li class="fragment">seul type d’authentification possible sous AUS</li>
@@ -855,25 +848,18 @@ _Workflow_ (version littéraire) :
 <div class="callout-content">
 <div>
 <ol type="1">
-<li class="fragment">Créer un compte <a href="https://github.com/"><code>GitHub</code></a></li>
-<li class="fragment">Créer un nouveau dépôt <strong>privé</strong> sur <code>GitHub</code></li>
-<li class="fragment">Créer un compte sur le <a href="https://datalab.sspcloud.fr/home">SSP Cloud</a></li>
-<li class="fragment">Lancer un service <code>RStudio</code>. Dans l’onglet de configuration <code>Git</code> du service, fixer la durée du <code>Cache</code> pour le stockage des identifiants <code>GitHub</code> à une valeur suffisamment élevée</li>
-<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> du <code>Datalab</code>):
+<li class="fragment">Connectez-vous à votre compte <a href="https://gitlab.insee.fr/"><code>sur le Gitlab de l'Insee</code></a></li>
+<li class="fragment">Créer un nouveau dépôt dans le sous-groupe <code>Conjoncture/Formation-Git-bonnes-pratiques-R</code>. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.</li>
+<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre espace <code>Z</code>):
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
 </ul></li>
-<li class="fragment"><a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Générer un <em>token</em></a> (jeton d’authentification) sur <code>GitHub</code></li>
-<li class="fragment">Stocker le <em>token</em> sur le <code>SSP Cloud</code> (ou un gestionnaire de mot de passe) :
-<ul>
-<li class="fragment"><code>Mon Compte</code> -&gt; <code>Services externes</code> -&gt; <code>Jeton d'accès personnel GitHub</code></li>
-</ul></li>
-<li class="fragment">Terminer la procédure de clonage en fournissant le nom d’utilisateur <code>GitHub</code> et le <em>token</em></li>
 </ol>
 </div>
 </div>
 </div>
 </div>
+<p><span class="emoji" data-emoji="bulb">💡</span> Si vous ne vous êtes jamais authentifié auprès du <code>Gitlab</code> de l’Insee ou n’avez jamais téléchargé <code>Git</code> vous aurez besoin, en amont, de configurer <code>Git</code> sur votre poste de travail : pour ce faire, suivre la fiche <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git">utilitR</a></p>
 <p>❓ <strong>Question</strong> : qu’est ce qui différencie le projet cloné d’un projet quelconque ?</p>
 </section>
 <section id="application-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">

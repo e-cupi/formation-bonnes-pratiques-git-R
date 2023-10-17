@@ -144,7 +144,7 @@
     "href": "slides/light.html#concepts-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Concepts",
-    "text": "Concepts\nWorkflow complet\n\n\n\nSource : itnext.io"
+    "text": "Concepts\nWorkflow complet\n ; commentaires “maison”."
   },
   {
     "objectID": "slides/light.html#commandes-essentielles",
@@ -172,14 +172,14 @@
     "href": "slides/light.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\n\nhttps\n\nSur Gitlab : choix “clone with HTTPS”\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\nSur Gitlab : choix “clone with SSH”\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS\n\n\nVoir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS\n\n\nVoir les fiches utilitR sur le sujet."
   },
   {
     "objectID": "slides/light.html#application-0",
     "href": "slides/light.html#application-0",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nCréer un compte GitHub\nCréer un nouveau dépôt privé sur GitHub\nCréer un compte sur le SSP Cloud\nLancer un service RStudio. Dans l’onglet de configuration Git du service, fixer la durée du Cache pour le stockage des identifiants GitHub à une valeur suffisamment élevée\nCloner le dépôt distant sur votre environnement local (ici, le RStudio du Datalab):\n\nFile → New project → Version Control → Git\n\nGénérer un token (jeton d’authentification) sur GitHub\nStocker le token sur le SSP Cloud (ou un gestionnaire de mot de passe) :\n\nMon Compte -&gt; Services externes -&gt; Jeton d'accès personnel GitHub\n\nTerminer la procédure de clonage en fournissant le nom d’utilisateur GitHub et le token\n\n\n\n\n\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z):\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
   },
   {
     "objectID": "slides/light.html#application-1",
@@ -585,7 +585,7 @@
     "href": "slides/complete.html#concepts-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Concepts",
-    "text": "Concepts\nWorkflow complet\n\n\n\nSource : itnext.io"
+    "text": "Concepts\nWorkflow complet\n ; commentaires “maison”."
   },
   {
     "objectID": "slides/complete.html#commandes-essentielles",
@@ -613,14 +613,14 @@
     "href": "slides/complete.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\n\nhttps\n\nSur Gitlab : choix “clone with HTTPS”\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\nSur Gitlab : choix “clone with SSH”\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS\n\n\nVoir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS\n\n\nVoir les fiches utilitR sur le sujet."
   },
   {
     "objectID": "slides/complete.html#application-0",
     "href": "slides/complete.html#application-0",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nCréer un compte GitHub\nCréer un nouveau dépôt privé sur GitHub\nCréer un compte sur le SSP Cloud\nLancer un service RStudio. Dans l’onglet de configuration Git du service, fixer la durée du Cache pour le stockage des identifiants GitHub à une valeur suffisamment élevée\nCloner le dépôt distant sur votre environnement local (ici, le RStudio du Datalab):\n\nFile → New project → Version Control → Git\n\nGénérer un token (jeton d’authentification) sur GitHub\nStocker le token sur le SSP Cloud (ou un gestionnaire de mot de passe) :\n\nMon Compte -&gt; Services externes -&gt; Jeton d'accès personnel GitHub\n\nTerminer la procédure de clonage en fournissant le nom d’utilisateur GitHub et le token\n\n\n\n\n\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z):\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
   },
   {
     "objectID": "slides/complete.html#application-1",
