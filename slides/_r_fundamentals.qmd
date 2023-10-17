@@ -303,31 +303,31 @@ Source : [eliocamp.github.io](https://eliocamp.github.io/reproducibility-with-r/
   - [utilitR](https://github.com/InseeFrLab/utilitR/blob/master/README.md)
   - [DoReMIFaSol](https://github.com/InseeFrLab/DoReMIFaSol)
 
-## :five: Faire de son projet un *package*
+<!-- ## :five: Faire de son projet un *package* -->
 
-::: {.incremental}
-- Un *package* est la forme maximale de [**modularité**]{.orange}
-  - Contient des [**fonctions**]{.blue2} rangées dans des [**modules**]{.blue2}
-  - Contient également de la [**documentation**]{.blue2}, des [**tests**]{.blue2}, des (méta-)données... 
+<!-- ::: {.incremental} -->
+<!-- - Un *package* est la forme maximale de [**modularité**]{.orange} -->
+<!--   - Contient des [**fonctions**]{.blue2} rangées dans des [**modules**]{.blue2} -->
+<!--   - Contient également de la [**documentation**]{.blue2}, des [**tests**]{.blue2}, des (méta-)données...  -->
 
-- [**Avantages**]{.orange}
-  - Idéal pour favoriser la [**réutilisation**]{.blue2} du code
-  - Des [**outils**]{.blue2} de développement : `devtools` et `usethis`
+<!-- - [**Avantages**]{.orange} -->
+<!--   - Idéal pour favoriser la [**réutilisation**]{.blue2} du code -->
+<!--   - Des [**outils**]{.blue2} de développement : `devtools` et `usethis` -->
 
-- [**Inconvénients**]{.orange}
-  - Coût de [**maintenance**]{.blue2} élevé
-:::
+<!-- - [**Inconvénients**]{.orange} -->
+<!--   - Coût de [**maintenance**]{.blue2} élevé -->
+<!-- ::: -->
 
 ## Ressources supplémentaires
 
 <br>
 
 - La documentation utilitR sur les [projets RStudio](https://www.book.utilitr.org/03_fiches_thematiques/fiche_rprojects) et les [packages R](https://www.book.utilitr.org/01_r_insee/fiche_installer_packages)
-- La [bible des packages R](https://r-pkgs.org/whole-game.html)
+<!-- - La [bible des packages R](https://r-pkgs.org/whole-game.html) -->
 - Un excellent [workshop sur la reproductibilité avec R](https://eliocamp.github.io/reproducibility-with-r/materials/day1/02-projects/)
 
 
-{{< include applications_r/_application2.qmd >}}
+<!-- {{< include applications_r/_application2.qmd >}} -->
 
 
 # III- Formats de données
