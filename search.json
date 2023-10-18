@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "",
+    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
+    "href": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "",
+    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#crédits",
+    "href": "index.html#crédits",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "Crédits",
+    "text": "Crédits\nCette formation a été conçue de manière collaborative par des équipes de l’Insee et coordonnée par Romain Avouac et Lino Galiana.\nElle a bénéficié des contributions de : Romain Avouac, Julien Blasco, Thomas Faria, Lino Galiana, Pierre Lamarche, Romain Lesur Olivier Meslin, Olivier Pucher, Clément Rousset, Mohamed Seikouri et Tom Seimandi.\nLes supports et le code source (Github InseeFrLab ) sont librement réutilisables et disponibles sous licence MIT."
+  },
+  {
     "objectID": "slides/light.html#introduction",
     "href": "slides/light.html#introduction",
     "title": "Bonnes pratiques pour les projets statistiques",
@@ -179,7 +200,7 @@
     "href": "slides/light.html#application-0",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z):\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z) :\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
   },
   {
     "objectID": "slides/light.html#application-1",
@@ -193,7 +214,7 @@
     "href": "slides/light.html#application-2",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 2",
-    "text": "Application 2\n\n\n\nInteractions avec le dépôt distant\n\n\n\n\nEffectuer un push pour intégrer les changements locaux au projet distant\nParcourir l’historique du projet sur GitHub\n\nFaire apparaître les différences entre deux versions consécutives du projet\nAfficher une version passée du projet"
+    "text": "Application 2\n\n\n\nInteractions avec le dépôt distant\n\n\n\n\nEffectuer un push pour intégrer les changements locaux au projet distant\nParcourir l’historique du projet sur GitLab\n\nFaire apparaître les différences entre deux versions consécutives du projet\nAfficher une version passée du projet"
   },
   {
     "objectID": "slides/light.html#bonnes-pratiques",
@@ -207,21 +228,126 @@
     "href": "slides/light.html#bonnes-pratiques-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Bonnes pratiques",
-    "text": "Bonnes pratiques\nFormat des commits\n\n\n\n\nFréquence\n\nAussi souvent que possible\nLe lot de modifications doit “avoir du sens”\n\nMessages\n\nCourts et informatifs (comme un titre de mail)\nDécrire le pourquoi plutôt que le comment dans le texte"
+    "text": "Bonnes pratiques\nFormat des commits\n\n\n\n\nFréquence\n\nAussi souvent que possible, quasi autant que ctrl+S\nLe lot de modifications doit “avoir du sens”\n\nMessages\n\nCourts et informatifs (comme un titre de mail)\nDécrire le pourquoi plutôt que le comment dans le texte"
   },
   {
     "objectID": "slides/light.html#application-3",
     "href": "slides/light.html#application-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 3",
-    "text": "Application 3\n\n\n\nLe fichier .gitignore\n\n\n\nLors de la création du projet sur GitHub, nous avons demandé la création d’un fichier .gitignore, qui se situe à la racine du projet. Il spécifie l’ensemble des fichiers qui seront toujours exclus de l’indexation faite par Git.\n\nExclure les fichiers de type *.pdf et *.html\nCréer un dossier data à la racine du projet et créer à l’intérieur de celui-ci un fichier data/raw.csv avec une ligne de données quelconque\nAjouter au .gitignore le dossier data/\nVérifier que toutes les règles ajoutées précédemment fonctionnent comme attendu\n\n\n\n\n\n❓ Question : que se passe-t-il lorsque l’on ajoute au .gitignore des fichiers qui ont déjà été commit sur le projet Git ?"
+    "text": "Application 3\n\n\n\nLe fichier .gitignore\n\n\n\nAu moment du clonage du dépôt, le fichier .gitignore, est apparu à la racine du projet. Il spécifie l’ensemble des fichiers qui seront toujours exclus de l’indexation faite par Git.\n\nExclure les fichiers de type *.pdf et *.html\nCréer un dossier data à la racine du projet et créer à l’intérieur de celui-ci un fichier data/raw.csv avec une ligne de données quelconque\nAjouter au .gitignore le dossier data/\nVérifier que toutes les règles ajoutées précédemment fonctionnent comme attendu\n\n\n\n\n\n❓ Question : que se passe-t-il lorsque l’on ajoute au .gitignore des fichiers qui ont déjà été commit sur le projet Git ?"
+  },
+  {
+    "objectID": "slides/light.html#outils-pour-le-travail-collaboratif",
+    "href": "slides/light.html#outils-pour-le-travail-collaboratif",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Outils pour le travail collaboratif",
+    "text": "Outils pour le travail collaboratif\n\nL’éco-système Git facilite le travail collaboratif\n\nGit  : modèle des branches\nGitHub  / GitLab  : Issues, Merge Requests, Forks\n\n\n\n\nCes outils ne remplacent pas une bonne définition de l’organisation du travail en équipe\n\nChoix d’un workflow (exemples : périmètre des “projets”, conventions de nommage des branches, etc.)\nDroits d’accès\nRègles de contribution"
+  },
+  {
+    "objectID": "slides/light.html#application-4",
+    "href": "slides/light.html#application-4",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 4",
+    "text": "Application 4\n\n\n\nSynchronisation des dépôts\n\n\n\n\nSe mettre par groupes de 3/4 personnes:\n\nUne personne aura la responsabilité d’être mainteneur\nDeux à trois personnes seront développeurs\n\nLe mainteneur crée un dépôt sur Github. Il/Elle donne des droits au(x) développeur(s) du projet\nCréer une copie locale (clone) du projet sur son service RStudio du Datalab\nCréer un fichier &lt;votre_nom&gt;-&lt;votre_prenom&gt;.md. Écrire dedans trois phrases de son choix sans ponctuation ni majuscules, puis commit et push les modifications\nÀ ce stade, une seule personne (la plus rapide) devrait ne pas avoir rencontré de rejet du push. C’est normal ! Le premier ayant fait un push a modifié le dépôt commun ; les autres doivent intégrer ces modifications dans leur version locale (pull) avant d’avoir le droit de proposer un changement.\nNéanmoins, le pull renvoie également une erreur : Git ne parvient pas à résoudre la divergence d’historique. Essayons de comprendre le problème et les solutions possibles."
+  },
+  {
+    "objectID": "slides/light.html#divergence-dhistoriques-cas-simple",
+    "href": "slides/light.html#divergence-dhistoriques-cas-simple",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Divergence d’historiques : cas simple",
+    "text": "Divergence d’historiques : cas simple\n\n\n\nGit résout le problème via un fast-forward merge\n\nLe commit distant est rajouté à l’historique local\nLes dépôts sont synchronisés"
+  },
+  {
+    "objectID": "slides/light.html#divergence-dhistoriques-cas-compliqué",
+    "href": "slides/light.html#divergence-dhistoriques-cas-compliqué",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Divergence d’historiques : cas compliqué",
+    "text": "Divergence d’historiques : cas compliqué\n\n\n\nGit ne peut pas résoudre de lui même la divergence\n\n\n\n\nDeux stratégies possibles\n\nLe merge\nLe rebase"
+  },
+  {
+    "objectID": "slides/light.html#ère-possibilité-le-merge",
+    "href": "slides/light.html#ère-possibilité-le-merge",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "1ère possibilité : le merge",
+    "text": "1ère possibilité : le merge\n\n\n\nGit crée un commit de merge\n\nComportement par défaut (jusqu’à récemment)\n\n\n\n\n\nInconvénient : rend l’historique non-linéaire (plus d’explications)"
+  },
+  {
+    "objectID": "slides/light.html#ème-possibilité-le-rebase-12",
+    "href": "slides/light.html#ème-possibilité-le-rebase-12",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "2ème possibilité : le rebase (1/2)",
+    "text": "2ème possibilité : le rebase (1/2)\n\n\n\nGit effectue 3 étapes\n\nSupprime temporairement le commit local\nRéalise un fast-forward merge\nRajoute le commit local au bout de l’historique"
+  },
+  {
+    "objectID": "slides/light.html#ème-possibilité-le-rebase-22",
+    "href": "slides/light.html#ème-possibilité-le-rebase-22",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "2ème possibilité : le rebase (2/2)",
+    "text": "2ème possibilité : le rebase (2/2)\n\n\n\nAvantage : l’historique reste linéaire\n\n\n\n\nAttention : ne jamais rebase des commits déjà poussés sur un dépôt public (plus d’explications)"
+  },
+  {
+    "objectID": "slides/light.html#application-4-suite",
+    "href": "slides/light.html#application-4-suite",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 4 (suite)",
+    "text": "Application 4 (suite)\n\n\n\nSynchronisation des dépôts\n\n\n\n\nDans notre cas, on peut utiliser rebase sans trop de risques. Comme l’interface RStudio ne permet pas (encore) de sélectionner la stratégie de pull, on va préciser la configuration voulue via une commande passée dans le terminal\n\ngit config pull.rebase true\n\nPour ceux dont le push a été refusé, effectuer un pull des modifications distantes via l’interface RStudio\nEffectuer à nouveau un push de vos modifications locales\nLes derniers membres du groupe devront refaire les étapes précédentes, potentiellement plusieurs fois, pour pouvoir push leurs modifications locales\n\n\n\n\n\n❓ Question : que se serait-il passé si les différents membres du groupe avaient effectué leurs modifications sur un seul et même fichier ?"
+  },
+  {
+    "objectID": "slides/light.html#application-5",
+    "href": "slides/light.html#application-5",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 5",
+    "text": "Application 5\n\n\n\nRésoudre les conflits\n\n\n\n\nOn se place dans la même configuration que dans l’application précédente : un mainteneur et deux/trois développeurs\nLe mainteneur modifie le contenu de son fichier, puis commit et push les modifications\nSans faire de pull préalable, les développeurs modifient également le contenu du fichier du mainteneur, puis commit et push les modifications\nLe push est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut pull les changements distants au préalable. Mais cette fois, le pull est également rejeté : il y a un conflit entre l’historique du projet distant et celui du projet local. Git nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.\nUtiliser l’interface de RStudio pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis commit/push les modifications\nComme dans l’application précédente, seul le développeur le plus rapide parvient à push. Les autres doivent répéter l’opération.\n\n\n\n\n\n❓ Question : comment limiter au maximum la survenue des conflits d’historique ?"
+  },
+  {
+    "objectID": "slides/light.html#le-modèle-des-branches",
+    "href": "slides/light.html#le-modèle-des-branches",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Le modèle des branches",
+    "text": "Le modèle des branches"
+  },
+  {
+    "objectID": "slides/light.html#le-modèle-des-branches-1",
+    "href": "slides/light.html#le-modèle-des-branches-1",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Le modèle des branches",
+    "text": "Le modèle des branches"
+  },
+  {
+    "objectID": "slides/light.html#exemple-dorganisation-le-github-flow",
+    "href": "slides/light.html#exemple-dorganisation-le-github-flow",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Exemple d’organisation : le GitHub flow",
+    "text": "Exemple d’organisation : le GitHub flow\n\nDescription plus détaillée : ici"
+  },
+  {
+    "objectID": "slides/light.html#application-6",
+    "href": "slides/light.html#application-6",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 6",
+    "text": "Application 6\n\n\n\nBranches, issues et pull requests\n\n\n\n\nSur GitHub, chaque personne ouvre une Issue sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet\nCréer une branche dont le nom indique la modification que vous allez apporter (ex : ajout-authentification)\nEffectuer un commit avec les modifications de votre choix, puis pousser les changements sur une nouvelle branche du dépôt distant\nOuvrir une Pull Request (PR) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant. Spécifier que l’acceptation de la Pull Request entraînera la fermeture automatique de l’Issue associée en écrivant dans le corps de la PR : close #N où N est le numéro de l’Issue en question\nChaque personne effectue finalement une review d’une PR d’un autre membre de l’équipe, suite à quoi les différentes PR peuvent être fusionnées\n\n\n\n\n\n❓ Question : quelle organisation pour merge dans la branche principale ?"
+  },
+  {
+    "objectID": "slides/light.html#application-7",
+    "href": "slides/light.html#application-7",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 7",
+    "text": "Application 7\n\n\n\nUtilisation de GitLab\n\n\n\nCette application vise à prendre en matin l’interface de GitLab, éventuellement dans le cadre de votre environnement interne de travail.\n\nDans le cadre d’un GitLab interne, il est plus confortable d’utiliser l’authentification via clé ssh plutôt que l’authentification par token. Si vous n’en avez pas encore, générer une clé ssh et ajouter celle-ci à votre compte GitLab. Se référer pour cela à la documentation GitLab ou, idéalement, à la documentation de cette procédure sur votre environnement interne de travail.\nExplorer l’interface de GitLab pour retrouver les différents éléments que nous avons exploités sur l’interface de GitHub.\nCréer un projet dans son espace personnel sur GitLab et répéter les opérations des applications 1 et 2."
+  },
+  {
+    "objectID": "slides/light.html#application-8-bonus",
+    "href": "slides/light.html#application-8-bonus",
+    "title": "Bonnes pratiques pour les projets statistiques",
+    "section": "Application 8 (bonus)",
+    "text": "Application 8 (bonus)\n\n\n\nContribution à un projet open-source\n\n\n\n\nSur GitHub, faire un fork du dépôt git-exo\nCréer une branche intitulée &lt;votre_nom&gt;-&lt;votre_prénom&gt;\nEffectuer un commit avec les modifications de votre choix, puis pousser les changements sur votre fork\nOuvrir une Pull Request (PR) pour proposer d’intégrer vos changements sur la branche principale du dépôt git-exo\nOuvrir une Issue dans laquelle vous mentionnez la Pull Request précédemment ouverte\n\n\n\n\n\n❓ Question : pourquoi, avec un fork, est-il très important de toujours effectuer une Pull Request à partir d’une branche différente de la branche principale ?"
   },
   {
     "objectID": "slides/light.html#ressources-supplémentaires",
     "href": "slides/light.html#ressources-supplémentaires",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Ressources supplémentaires",
-    "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nFormation Travail collaboratif avec R\nLa documentation utilitR propose plusieurs chapitres sur Git\nLa Bible de l’usage de Git\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Tchap Insee-Git-Gitlab\nA l’Insee : la documentation utilisateurs pour l’utilisation de Git sur AUS\nSollicitez vos collègues utilisateurs de Git !"
+    "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nFormation Travail collaboratif avec R\nLa documentation utilitR propose plusieurs chapitres sur Git\nLa Bible de l’usage de Git\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Tchap Insee-Git-Gitlab (💡 utilisez Tchap via l’interface Element, dispo sur le centre logiciel !)\nA l’Insee : la documentation utilisateurs pour l’utilisation de Git sur AUS\nSollicitez vos collègues utilisateurs de Git !"
   },
   {
     "objectID": "slides/light.html#plan-de-la-partie-1",
@@ -620,7 +746,7 @@
     "href": "slides/complete.html#application-0",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z):\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nConnectez-vous à votre compte sur le Gitlab de l'Insee\nCréer un nouveau dépôt dans le sous-groupe Conjoncture/Formation-Git-bonnes-pratiques-R. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre espace Z) :\n\nFile → New project → Version Control → Git\n\n\n\n\n\n\n💡 Si vous ne vous êtes jamais authentifié auprès du Gitlab de l’Insee ou n’avez jamais téléchargé Git vous aurez besoin, en amont, de configurer Git sur votre poste de travail : pour ce faire, suivre la fiche utilitR\n❓ Question : qu’est ce qui différencie le projet cloné d’un projet quelconque ?"
   },
   {
     "objectID": "slides/complete.html#application-1",
@@ -634,7 +760,7 @@
     "href": "slides/complete.html#application-2",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 2",
-    "text": "Application 2\n\n\n\nInteractions avec le dépôt distant\n\n\n\n\nEffectuer un push pour intégrer les changements locaux au projet distant\nParcourir l’historique du projet sur GitHub\n\nFaire apparaître les différences entre deux versions consécutives du projet\nAfficher une version passée du projet"
+    "text": "Application 2\n\n\n\nInteractions avec le dépôt distant\n\n\n\n\nEffectuer un push pour intégrer les changements locaux au projet distant\nParcourir l’historique du projet sur GitLab\n\nFaire apparaître les différences entre deux versions consécutives du projet\nAfficher une version passée du projet"
   },
   {
     "objectID": "slides/complete.html#bonnes-pratiques",
@@ -648,21 +774,21 @@
     "href": "slides/complete.html#bonnes-pratiques-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Bonnes pratiques",
-    "text": "Bonnes pratiques\nFormat des commits\n\n\n\n\nFréquence\n\nAussi souvent que possible\nLe lot de modifications doit “avoir du sens”\n\nMessages\n\nCourts et informatifs (comme un titre de mail)\nDécrire le pourquoi plutôt que le comment dans le texte"
+    "text": "Bonnes pratiques\nFormat des commits\n\n\n\n\nFréquence\n\nAussi souvent que possible, quasi autant que ctrl+S\nLe lot de modifications doit “avoir du sens”\n\nMessages\n\nCourts et informatifs (comme un titre de mail)\nDécrire le pourquoi plutôt que le comment dans le texte"
   },
   {
     "objectID": "slides/complete.html#application-3",
     "href": "slides/complete.html#application-3",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 3",
-    "text": "Application 3\n\n\n\nLe fichier .gitignore\n\n\n\nLors de la création du projet sur GitHub, nous avons demandé la création d’un fichier .gitignore, qui se situe à la racine du projet. Il spécifie l’ensemble des fichiers qui seront toujours exclus de l’indexation faite par Git.\n\nExclure les fichiers de type *.pdf et *.html\nCréer un dossier data à la racine du projet et créer à l’intérieur de celui-ci un fichier data/raw.csv avec une ligne de données quelconque\nAjouter au .gitignore le dossier data/\nVérifier que toutes les règles ajoutées précédemment fonctionnent comme attendu\n\n\n\n\n\n❓ Question : que se passe-t-il lorsque l’on ajoute au .gitignore des fichiers qui ont déjà été commit sur le projet Git ?"
+    "text": "Application 3\n\n\n\nLe fichier .gitignore\n\n\n\nAu moment du clonage du dépôt, le fichier .gitignore, est apparu à la racine du projet. Il spécifie l’ensemble des fichiers qui seront toujours exclus de l’indexation faite par Git.\n\nExclure les fichiers de type *.pdf et *.html\nCréer un dossier data à la racine du projet et créer à l’intérieur de celui-ci un fichier data/raw.csv avec une ligne de données quelconque\nAjouter au .gitignore le dossier data/\nVérifier que toutes les règles ajoutées précédemment fonctionnent comme attendu\n\n\n\n\n\n❓ Question : que se passe-t-il lorsque l’on ajoute au .gitignore des fichiers qui ont déjà été commit sur le projet Git ?"
   },
   {
     "objectID": "slides/complete.html#outils-pour-le-travail-collaboratif",
     "href": "slides/complete.html#outils-pour-le-travail-collaboratif",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Outils pour le travail collaboratif",
-    "text": "Outils pour le travail collaboratif\n\nL’éco-système Git facilite le travail collaboratif\n\nGit  : modèle des branches\nGitHub  / GitLab  : Issues, Pull Requests, Forks\n\n\n\n\nCes outils ne remplacent pas une bonne définition de l’organisation du travail en équipe\n\nChoix d’un workflow\nDroits d’accès\nRègles de contribution"
+    "text": "Outils pour le travail collaboratif\n\nL’éco-système Git facilite le travail collaboratif\n\nGit  : modèle des branches\nGitHub  / GitLab  : Issues, Merge Requests, Forks\n\n\n\n\nCes outils ne remplacent pas une bonne définition de l’organisation du travail en équipe\n\nChoix d’un workflow (exemples : périmètre des “projets”, conventions de nommage des branches, etc.)\nDroits d’accès\nRègles de contribution"
   },
   {
     "objectID": "slides/complete.html#application-4",
@@ -767,7 +893,7 @@
     "href": "slides/complete.html#ressources-supplémentaires",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Ressources supplémentaires",
-    "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nFormation Travail collaboratif avec R\nLa documentation utilitR propose plusieurs chapitres sur Git\nLa Bible de l’usage de Git\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Tchap Insee-Git-Gitlab\nA l’Insee : la documentation utilisateurs pour l’utilisation de Git sur AUS\nSollicitez vos collègues utilisateurs de Git !"
+    "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nFormation Travail collaboratif avec R\nLa documentation utilitR propose plusieurs chapitres sur Git\nLa Bible de l’usage de Git\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Tchap Insee-Git-Gitlab (💡 utilisez Tchap via l’interface Element, dispo sur le centre logiciel !)\nA l’Insee : la documentation utilisateurs pour l’utilisation de Git sur AUS\nSollicitez vos collègues utilisateurs de Git !"
   },
   {
     "objectID": "slides/complete.html#plan-de-la-partie-1",
@@ -1237,26 +1363,5 @@
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Ressources supplémentaires",
     "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nLa documentation utilitR\nUn cours complet sur la reproductibilité avec R\nCours Reproductibilité et bonnes pratiques pour les projets de data science de l’ENSAE\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Slack grrr, très dynamique\nLe salon Tchap Langage R\nPour l’utilisation de R à l’Insee : le salon Tchap Insee - Outils Stats v2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "",
-    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
-    "href": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "",
-    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#crédits",
-    "href": "index.html#crédits",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "Crédits",
-    "text": "Crédits\nCette formation a été conçue de manière collaborative par des équipes de l’Insee et coordonnée par Romain Avouac et Lino Galiana.\nElle a bénéficié des contributions de : Romain Avouac, Julien Blasco, Thomas Faria, Lino Galiana, Pierre Lamarche, Romain Lesur Olivier Meslin, Olivier Pucher, Clément Rousset, Mohamed Seikouri et Tom Seimandi.\nLes supports et le code source (Github InseeFrLab ) sont librement réutilisables et disponibles sous licence MIT."
   }
 ]

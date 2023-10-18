@@ -1,1 +1,1 @@
-Sitemap: https://e-cupi.github.io/formation-bonnes-pratiques-git-R/sitemap.xml
+Sitemap: https://github.com/e-cupi/formation-bonnes-pratiques-git-R/sitemap.xml
