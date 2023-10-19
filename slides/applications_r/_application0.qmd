@@ -7,8 +7,8 @@
 1. Créer un nouveau dépôt public sur [GitLab, dans le groupe de la formation](https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r)
 2. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre `Z`):
     + `File` → `New project` → `Version Control` → `Git`
-3. Créer un script `get_data.R` en copiant le contenu de [ce fichier](https://raw.githubusercontent.com/ecupi/formation-bonnes-pratiques-git-R/main/R/get_data.R), puis l'exécuter
-4. Créer le script `script.R` dans votre dépôt en copiant le contenu de [ce fichier](https://raw.githubusercontent.com/ecupi/formation-bonnes-pratiques-git-R/main/R/script.R)
+3. Créer un script `get_data.R` en copiant le contenu de [ce fichier](https://raw.githubusercontent.com/e-cupi/formation-bonnes-pratiques-git-R/main/R/get_data.R), puis l'exécuter
+4. Créer le script `script.R` dans votre dépôt en copiant le contenu de [ce fichier](https://raw.githubusercontent.com/e-cupi/formation-bonnes-pratiques-git-R/main/R/get_data.R)
 5. Ajouter la règle "individu_reg.*" au fichier `.gitignore`. Que signifie-t-elle ?
 6. *Commit*/*push* les changements
 :::
