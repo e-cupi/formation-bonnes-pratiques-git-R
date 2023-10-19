@@ -25,7 +25,7 @@
 
 - Avec un `pull`, `Git` résout le problème via un [***fast-forward merge***]{.blue2}
     - `Git`crée un commit de _merge_ de l'historique distant dans le local 
-    - :warning_sign: : rend l'historique non linéaire 
+    - _Nota bene_ : rend l'historique non linéaire 
 
 
 ## Divergence d'historiques : cas compliqué
@@ -43,9 +43,10 @@
 ## Résoudre les conflits : l'interface RStudio
 
 ![](img/rstudio_conflit.png)
-- Choisir la version à conserver
-- Supprimer les "marquages" du conflit
-- `Commit` et `push` les changements
+
+- Choisir la version à conserver  
+- Supprimer les "marquages" du conflit  
+- `Commit` et `push` les changements  
 
 
 
