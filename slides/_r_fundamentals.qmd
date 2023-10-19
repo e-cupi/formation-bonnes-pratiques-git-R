@@ -108,6 +108,27 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 
 :::
 
+## :two: Utiliser des fonctions {.smaller}
+
+À ne pas reproduire chez vous
+
+![](img/chargeDB.png)
+## :two: Utiliser des fonctions {.smaller}
+
+À ne pas reproduire chez vous
+
+![](img/chargeDB_annote.png)
+## :two: Utiliser des fonctions {.smaller}
+
+À ne pas reproduire chez vous
+
+![](img/save_meta_data.png)
+## :two: Utiliser des fonctions {.smaller}
+
+À ne pas reproduire chez vous
+
+![](img/save_meta_data_annote.png)
+
 ## :three: Documenter son code
 
 - Grands principes :
@@ -125,6 +146,19 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 
 :::
 
+
+## :three: Documenter son code
+
+::: {.callout-tip}
+## Utiliser aussi "l'auto-documentation" pour les noms de répertoire !
+
+:negative_squared_cross_mark: pas de répertoires avec votre prénom, votre nom ou vos initiales.
+
+:::
+
+...au risque de se retrouver avec ça : 
+![](img/prenoms_repertoires.png)
+Taille totale : 7 Go
 
 ## :four: Pas d'ambiguïté sur les _packages_ utilisés {.smaller}
 
@@ -148,6 +182,22 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 - `package1` et `package2` contiennent chacun une fonction appelée `superFonction`.
 - Si `package2` est chargé après `package1`, alors `superFonction` désigne par défaut la fonction de `package2`.
 - Mieux vaut noter `package1::superFonction` et `package2::superFonction`
+:::
+
+## :four: Pas d'ambiguïté sur les _packages_ utilisés {.smaller}
+
+:::{.callout-tip}
+## _Spécial conj_
+Dès que vos codes font appels à des fonctions des packages "maison" tels que `pRev` ou `RConj` : ajoutez le nom du package devant la fonction.
+Lors des montées de version des packages, vous retrouverez facilement les endroits dans vos codes qui peuvent être affectés.
+:::
+
+
+:::{.callout-tip}
+## _Astuce RStudio_
+`Ctrl+Maj+F` : permet de chercher un terme dans l'ensemble des scripts d'un répertoire.  
+:arrow_right: pour retrouver facilement les appels à un package donné.
+
 :::
 
 
@@ -330,30 +380,141 @@ Source : [eliocamp.github.io](https://eliocamp.github.io/reproducibility-with-r/
 <!-- {{< include applications_r/_application2.qmd >}} -->
 
 
-# III- Formats de données
+<!-- # III- Formats de données -->
+
+<!-- ## Enjeux -->
+
+<!-- ::: {.incremental} -->
+<!-- - Le choix d'un format de données répond à un [**arbitrage**]{.orange} entre plusieurs critères : -->
+<!--   - [**Finalité**]{.blue2} (traitement, analyse, diffusion) -->
+<!--   - [**Public cible**]{.blue2} -->
+<!--   - [**Volumétrie**]{.blue2} -->
+<!-- ::: -->
+
+<!-- ## Recommandations {.smaller} -->
+
+<!-- - Eviter impérativement les formats de données adhérents à un langage (`RDS`, `RData`, `fst`, `sas7bdat`, etc.). -->
+
+<!-- ::: {.incremental} -->
+<!-- - Deux formats à privilégier : -->
+<!--   - [**CSV**]{.orange} : pour la [**plupart des usages courants**]{.blue2} -->
+<!--     - _Avantage_ : [**non-compressé**]{.blue2} donc facilement [**lisible**]{.blue2} -->
+<!--     - _Inconvénients_ : pas de gestion des méta-données, peu adapté aux données volumineuses -->
+<!--   - [**Parquet**]{.orange} : pour le traitement de [**données volumineuses**]{.blue2} -->
+<!--     - [**Compressé**]{.blue2} et très [**performant**]{.blue2} en lecture/écriture -->
+<!--     - Gestion native des méta-données -->
+<!-- ::: -->
+
+
+<!-- {{< include applications_r/_application3.qmd >}} -->
+
+
+# IV- Environnements reproductibles
+
+## Expérience de pensée
+
+::: {.incremental}
+- Imaginons la situation suivante :
+  - J'installe une version de `R` sur mon poste
+  - Je développe un projet en installant les _packages_ nécessaires
+  - Une fois terminé, je passe au projet suivant, et ainsi de suite.
+
+
+- Quels [**problèmes**]{.orange} puis-je rencontrer au fil des projets ?
+
+- Est-il facile de [**partager**]{.orange} un de mes projets ?
+:::
 
 ## Enjeux
 
+- [**Version de**]{.orange} [**R**]{.blue2} [**fixe**]{.orange}, celle de l'installation système
+
+. . .
+
+- [**Conflits de version**]{.orange} : différents projets peuvent requérir différentes versions d'un même _package_.
+
+. . .
+
+- [**Reproductibilité limitée**]{.orange} : difficile de dire quel projet nécessite quel _package_.
+
+. . .
+
+- [**Portabilité limitée**]{.orange} : difficile de préciser dans un fichier les dépendances spécifiques à un projet.
+
+
+## Des environnements reproductibles avec `renv`
+
+- `renv` permet de créer des **env**ironnements **r**eproductibles
+
+. . .
+
+- [**Isolation**]{.orange} : chaque projet dispose de sa propre librairie de packages
+
+. . .
+
+- [**Reproductibilité**]{.orange} : `renv` enregistre les versions exactes des *packages* nécessaires au projet
+
+. . .
+
+- [**Portabilité**]{.orange}: un tiers peut exécuter le projet avec les mêmes spécifications
+
+## Utilisation de `renv`
+
+1. [**Initialisation**]{.orange} (`init`) de l'environnement local du projet
+
+. . .
+
+2. [**Développement**]{.orange} du projet
+
+. . .
+
+3. [**Enregistrement**]{.orange} (`snapshot`) des versions des *packages* installés
+
+. . .
+
+4. [**Restauration**]{.orange} (`restore`) d'un environnement
+
+## :one: Initialisation de l'environnement
+
 ::: {.incremental}
-- Le choix d'un format de données répond à un [**arbitrage**]{.orange} entre plusieurs critères :
-  - [**Finalité**]{.blue2} (traitement, analyse, diffusion)
-  - [**Public cible**]{.blue2}
-  - [**Volumétrie**]{.blue2}
+- `renv::init()` dans un projet RStudio crée :
+  - Un dossier `renv` et le fichier `.Rprofile` : activation automatique de l'environnement
+  - Le fichier `renv.lock` : versions des *packages* installés
 :::
 
-## Recommandations {.smaller}
+. . .
 
-- Eviter impérativement les formats de données adhérents à un langage (`RDS`, `RData`, `fst`, `sas7bdat`, etc.).
+![](img/renv_init.png){height="400" fig-align="center"}
+
+## :two: Développement du projet
 
 ::: {.incremental}
-- Deux formats à privilégier :
-  - [**CSV**]{.orange} : pour la [**plupart des usages courants**]{.blue2}
-    - _Avantage_ : [**non-compressé**]{.blue2} donc facilement [**lisible**]{.blue2}
-    - _Inconvénients_ : pas de gestion des méta-données, peu adapté aux données volumineuses
-  - [**Parquet**]{.orange} : pour le traitement de [**données volumineuses**]{.blue2}
-    - [**Compressé**]{.blue2} et très [**performant**]{.blue2} en lecture/écriture
-    - Gestion native des méta-données
+- Une fois l'environnement initialisé, on développe le projet de manière habituelle :
+  - Installations/suppressions/mises à jour de packages
+  - Ecriture de scripts
 :::
 
+. . .
 
-{{< include applications_r/_application3.qmd >}}
+- `renv::status()` : indique les _packages_ installés/supprimés par rapport au fichier `renv.lock`
+
+## :three: Enregistrement de l'environnement {.smaller}
+
+- `renv::snapshot()` : enregistre les versions des _packages_ installés dans le fichier `renv.lock`
+- Ne pas oublier de committer le fichier `renv.lock`!
+
+. . .
+
+![](img/renv_snapshot.png){height="350" fig-align="center"}
+
+## :four: Restauration de l'environnement
+
+- `renv::restore()` : installe/désinstalle les _packages_ nécessaires pour arriver à l'état spécifié dans le fichier `renv.lock`
+
+. . .
+
+- [**Portabilité**]{.orange} : un tiers peut recréer un environnement avec les mêmes spécifications
+
+
+{{< include applications_r/_application4.qmd >}}
+
