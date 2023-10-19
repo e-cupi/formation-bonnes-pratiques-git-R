@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/cards/version-sensibilisation/index.html</loc>
-    <lastmod>2023-10-19T20:23:23.824Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/slides/light.html</loc>
+    <lastmod>2023-10-19T20:23:55.483Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/cards/version-full/index.html</loc>
-    <lastmod>2023-10-19T20:23:23.040Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/slides/complete.html</loc>
+    <lastmod>2023-10-19T20:24:00.383Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/index.html</loc>
-    <lastmod>2023-10-19T20:23:22.272Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/index.html</loc>
+    <lastmod>2023-10-19T20:24:02.649Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/slides/light.html</loc>
-    <lastmod>2023-10-19T20:23:14.792Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/cards/version-boss/index.html</loc>
+    <lastmod>2023-10-19T20:24:03.246Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/slides/complete.html</loc>
-    <lastmod>2023-10-19T20:23:20.408Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/cards/version-full/index.html</loc>
+    <lastmod>2023-10-19T20:24:03.899Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/cards/version-boss/index.html</loc>
-    <lastmod>2023-10-19T20:23:22.664Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/cards/version-light/index.html</loc>
+    <lastmod>2023-10-19T20:24:04.589Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/e-cupi/formation-bonnes-pratiques-git-R/cards/version-light/index.html</loc>
-    <lastmod>2023-10-19T20:23:23.428Z</lastmod>
+    <loc>https://e-cupi.github.io/formation-bonnes-pratiques-git-R/cards/version-sensibilisation/index.html</loc>
+    <lastmod>2023-10-19T20:24:05.356Z</lastmod>
   </url>
 </urlset>
