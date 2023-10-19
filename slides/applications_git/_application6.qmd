@@ -4,7 +4,7 @@
 ::: {.incremental}
 1. Sur `GitLab`, chaque personne ouvre une `Issue` sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet
 2. Via `Rstudio`, créer une branche dont le nom indique la modification que vous allez apporter. :arrow_right: utiliser l'icône violette dans l'onglet `Git`, sur la droite. 
-:warning_sign: : être attentif à la branche _depuis laquelle_ vous créez votre nouvelle branche.
+:warning: : être attentif à la branche _depuis laquelle_ vous créez votre nouvelle branche.
 3. Vérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un `commit` avec les modifications de votre choix, puis pousser les changements.
 4. Ouvrir une `Merge Request` (`MR`) pour proposer d'intégrer vos changements sur la branche principale du dépôt distant.
 5. Chaque personne effectue finalement une *review* d'une `MR` d'un autre membre de l'équipe, suite à quoi les différentes `MR` peuvent être fusionnées
