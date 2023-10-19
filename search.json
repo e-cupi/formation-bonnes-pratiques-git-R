@@ -298,7 +298,7 @@
     "href": "slides/light.html#application-0-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nSi vous ne l’avez pas fait lors de la première partie de la formation, créer un compte sur GitHub et générer un token (jeton d’accès) d’authentification\nCréer un nouveau dépôt public sur GitLab, dans le groupe de la formation\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre Z):\n\nFile → New project → Version Control → Git\n\nCréer un script get_data.R en copiant le contenu de ce fichier, puis l’exécuter\nCréer le script script.R dans votre dépôt en copiant le contenu de ce fichier\nAjouter la règle “individu_reg.*” au fichier .gitignore. Que signifie-t-elle ?\nCommit/push les changements"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nCréer un nouveau dépôt public sur GitLab, dans le groupe de la formation\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre Z):\n\nFile → New project → Version Control → Git\n\nCréer un script get_data.R en copiant le contenu de ce fichier, puis l’exécuter\nCréer le script script.R dans votre dépôt en copiant le contenu de ce fichier\nAjouter la règle “individu_reg.*” au fichier .gitignore. Que signifie-t-elle ?\nCommit/push les changements"
   },
   {
     "objectID": "slides/light.html#enjeux",
@@ -865,7 +865,7 @@
     "href": "slides/complete.html#application-0-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 0",
-    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nSi vous ne l’avez pas fait lors de la première partie de la formation, créer un compte sur GitHub et générer un token (jeton d’accès) d’authentification\nCréer un nouveau dépôt public sur GitLab, dans le groupe de la formation\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre Z):\n\nFile → New project → Version Control → Git\n\nCréer un script get_data.R en copiant le contenu de ce fichier, puis l’exécuter\nCréer le script script.R dans votre dépôt en copiant le contenu de ce fichier\nAjouter la règle “individu_reg.*” au fichier .gitignore. Que signifie-t-elle ?\nCommit/push les changements"
+    "text": "Application 0\n\n\n\nPréparation de l’environnement de travail\n\n\n\n\nCréer un nouveau dépôt public sur GitLab, dans le groupe de la formation\nCloner le dépôt distant sur votre environnement local (ici, le RStudio de votre Z):\n\nFile → New project → Version Control → Git\n\nCréer un script get_data.R en copiant le contenu de ce fichier, puis l’exécuter\nCréer le script script.R dans votre dépôt en copiant le contenu de ce fichier\nAjouter la règle “individu_reg.*” au fichier .gitignore. Que signifie-t-elle ?\nCommit/push les changements"
   },
   {
     "objectID": "slides/complete.html#enjeux",
