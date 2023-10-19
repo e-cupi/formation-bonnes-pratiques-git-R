@@ -1208,9 +1208,8 @@ _Workflow_ (version littéraire) :
 <div>
 <ol start="0" type="1">
 <li class="fragment">Si vous ne l’avez pas fait lors de la première partie de la formation, créer un compte sur <a href="https://github.com/">GitHub</a> et <a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">générer un <em>token</em></a> (jeton d’accès) d’authentification</li>
-<li class="fragment">Créer un nouveau dépôt public sur <a href="https://github.com/">GitHub</a></li>
-<li class="fragment">Lancer un service <code>RStudio</code>. Dans l’onglet de configuration <code>Git</code> du service, fixer la durée du <code>Cache</code> pour le stockage des identifiants <code>GitHub</code> à une valeur suffisamment élevée</li>
-<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> du <code>Datalab</code>):
+<li class="fragment">Créer un nouveau dépôt public sur <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r">GitLab, dans le groupe de la formation</a></li>
+<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre <code>Z</code>):
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
 </ul></li>
@@ -1383,6 +1382,17 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </section>
+<section id="utiliser-des-fonctions-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions</h2>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/chargeDB.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/chargeDB_annote.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/save_meta_data.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/save_meta_data_annote.png"></p>
+</section>
 <section id="documenter-son-code" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="three">3️⃣</span> Documenter son code</h2>
 <ul>
@@ -1411,6 +1421,23 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </div>
+</section>
+<section id="documenter-son-code-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="three">3️⃣</span> Documenter son code</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Utiliser aussi “l’auto-documentation” pour les noms de répertoire !</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="emoji" data-emoji="negative_squared_cross_mark">❎</span> pas de répertoires avec votre prénom, votre nom ou vos initiales.</p>
+</div>
+</div>
+</div>
+<p>…au risque de se retrouver avec ça : <img data-src="img/prenoms_repertoires.png"> Taille totale : 7 Go</p>
 </section>
 <section id="pas-dambiguïté-sur-les-packages-utilisés" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="four">4️⃣</span> Pas d’ambiguïté sur les <em>packages</em> utilisés</h2>
@@ -1449,6 +1476,36 @@ _Workflow_ (version littéraire) :
 <li>Mieux vaut noter <code>package1::superFonction</code> et <code>package2::superFonction</code></li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+</section>
+<section id="pas-dambiguïté-sur-les-packages-utilisés-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="four">4️⃣</span> Pas d’ambiguïté sur les <em>packages</em> utilisés</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><em>Spécial conj</em></strong></p>
+</div>
+<div class="callout-content">
+<p>Dès que vos codes font appels à des fonctions des packages “maison” tels que <code>pRev</code> ou <code>RConj</code> : ajoutez le nom du package devant la fonction. Lors des montées de version des packages, vous retrouverez facilement les endroits dans vos codes qui peuvent être affectés.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><em>Astuce RStudio</em></strong></p>
+</div>
+<div class="callout-content">
+<p><code>Ctrl+Maj+F</code> : permet de chercher un terme dans l’ensemble des scripts d’un répertoire.<br>
+<span class="emoji" data-emoji="arrow_right">➡️</span> pour retrouver facilement les appels à un package donné.</p>
 </div>
 </div>
 </div>
@@ -1759,82 +1816,26 @@ _Workflow_ (version littéraire) :
 <li>Un excellent <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/02-projects/">workshop sur la reproductibilité avec R</a></li>
 </ul>
 <!-- {{< include applications_r/_application2.qmd >}} -->
-</section></section>
-<section>
-<section id="iii--formats-de-données" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>III- Formats de données</h1>
-
-</section>
-<section id="enjeux-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Enjeux</h2>
-<div>
-<ul>
-<li class="fragment">Le choix d’un format de données répond à un <span class="orange"><strong>arbitrage</strong></span> entre plusieurs critères :
-<ul>
-<li class="fragment"><span class="blue2"><strong>Finalité</strong></span> (traitement, analyse, diffusion)</li>
-<li class="fragment"><span class="blue2"><strong>Public cible</strong></span></li>
-<li class="fragment"><span class="blue2"><strong>Volumétrie</strong></span></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="recommandations" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Recommandations</h2>
-<ul>
-<li>Eviter impérativement les formats de données adhérents à un langage (<code>RDS</code>, <code>RData</code>, <code>fst</code>, <code>sas7bdat</code>, etc.).</li>
-</ul>
-<div>
-<ul>
-<li class="fragment">Deux formats à privilégier :
-<ul>
-<li class="fragment"><span class="orange"><strong>CSV</strong></span> : pour la <span class="blue2"><strong>plupart des usages courants</strong></span>
-<ul>
-<li class="fragment"><em>Avantage</em> : <span class="blue2"><strong>non-compressé</strong></span> donc facilement <span class="blue2"><strong>lisible</strong></span></li>
-<li class="fragment"><em>Inconvénients</em> : pas de gestion des méta-données, peu adapté aux données volumineuses</li>
-</ul></li>
-<li class="fragment"><span class="orange"><strong>Parquet</strong></span> : pour le traitement de <span class="blue2"><strong>données volumineuses</strong></span>
-<ul>
-<li class="fragment"><span class="blue2"><strong>Compressé</strong></span> et très <span class="blue2"><strong>performant</strong></span> en lecture/écriture</li>
-<li class="fragment">Gestion native des méta-données</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="application-3-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 3</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Manipulation des formats CSV et Parquet</strong></p>
-</div>
-<div class="callout-content">
-<div>
-<ol type="1">
-<li class="fragment">Effacer la base <code>individu_reg.csv</code></li>
-<li class="fragment">Modifier le script <code>get_data.R</code> pour écrire les données au format <code>Parquet</code> à l’aide de la fonction <code>arrow::write_parquet</code></li>
-<li class="fragment">Modifier la phase d’import dans <code>script.R</code> pour importer le fichier <code>Parquet</code> à l’aide de la fonction <code>arrow::read_parquet</code></li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Checkpoint</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<ul>
-<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application3/script.R">script.R</a></li>
-<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application3/get_data.R">get_data.R</a></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<p><img data-src="checkpoint.jpg"></p>
-</div>
-</div>
-</div>
+<!-- # III- Formats de données -->
+<!-- ## Enjeux -->
+<!-- ::: {.incremental} -->
+<!-- - Le choix d'un format de données répond à un [**arbitrage**]{.orange} entre plusieurs critères : -->
+<!--   - [**Finalité**]{.blue2} (traitement, analyse, diffusion) -->
+<!--   - [**Public cible**]{.blue2} -->
+<!--   - [**Volumétrie**]{.blue2} -->
+<!-- ::: -->
+<!-- ## Recommandations {.smaller} -->
+<!-- - Eviter impérativement les formats de données adhérents à un langage (`RDS`, `RData`, `fst`, `sas7bdat`, etc.). -->
+<!-- ::: {.incremental} -->
+<!-- - Deux formats à privilégier : -->
+<!--   - [**CSV**]{.orange} : pour la [**plupart des usages courants**]{.blue2} -->
+<!--     - _Avantage_ : [**non-compressé**]{.blue2} donc facilement [**lisible**]{.blue2} -->
+<!--     - _Inconvénients_ : pas de gestion des méta-données, peu adapté aux données volumineuses -->
+<!--   - [**Parquet**]{.orange} : pour le traitement de [**données volumineuses**]{.blue2} -->
+<!--     - [**Compressé**]{.blue2} et très [**performant**]{.blue2} en lecture/écriture -->
+<!--     - Gestion native des méta-données -->
+<!-- ::: -->
+<!-- {{< include applications_r/_application3.qmd >}} -->
 </section></section>
 <section>
 <section id="iv--environnements-reproductibles" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -1856,7 +1857,7 @@ _Workflow_ (version littéraire) :
 </ul>
 </div>
 </section>
-<section id="enjeux-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="enjeux-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Enjeux</h2>
 <ul>
 <li><span class="orange"><strong>Version de</strong></span> <span class="blue2"><strong>R</strong></span> <span class="orange"><strong>fixe</strong></span>, celle de l’installation système</li>
@@ -2057,7 +2058,7 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </section>
-<section id="checkpoint-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -2402,7 +2403,7 @@ _Workflow_ (version littéraire) :
 </div>
 <p>:::</p>
 </section>
-<section id="checkpoint-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="checkpoint-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -2423,7 +2424,7 @@ _Workflow_ (version littéraire) :
 <h1>VI- Publication reproductible</h1>
 
 </section>
-<section id="enjeux-4" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="enjeux-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Enjeux</h2>
 <ul>
 <li>Produire des <span class="orange"><strong>études reproductibles</strong></span> en intégrant le code et le texte dans un même document</li>
@@ -2602,7 +2603,7 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </section>
-<section id="checkpoint-4" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="checkpoint-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">

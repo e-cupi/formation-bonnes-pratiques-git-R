@@ -1196,9 +1196,8 @@ _Workflow_ (version littéraire) :
 <div>
 <ol start="0" type="1">
 <li class="fragment">Si vous ne l’avez pas fait lors de la première partie de la formation, créer un compte sur <a href="https://github.com/">GitHub</a> et <a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">générer un <em>token</em></a> (jeton d’accès) d’authentification</li>
-<li class="fragment">Créer un nouveau dépôt public sur <a href="https://github.com/">GitHub</a></li>
-<li class="fragment">Lancer un service <code>RStudio</code>. Dans l’onglet de configuration <code>Git</code> du service, fixer la durée du <code>Cache</code> pour le stockage des identifiants <code>GitHub</code> à une valeur suffisamment élevée</li>
-<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> du <code>Datalab</code>):
+<li class="fragment">Créer un nouveau dépôt public sur <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r">GitLab, dans le groupe de la formation</a></li>
+<li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre <code>Z</code>):
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
 </ul></li>
@@ -1371,6 +1370,17 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </section>
+<section id="utiliser-des-fonctions-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions</h2>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/chargeDB.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/chargeDB_annote.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/save_meta_data.png"> ## <span class="emoji" data-emoji="two">2️⃣</span> Utiliser des fonctions {.smaller}</p>
+<p>À ne pas reproduire chez vous</p>
+<p><img data-src="img/save_meta_data_annote.png"></p>
+</section>
 <section id="documenter-son-code" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="three">3️⃣</span> Documenter son code</h2>
 <ul>
@@ -1399,6 +1409,23 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </div>
+</section>
+<section id="documenter-son-code-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="three">3️⃣</span> Documenter son code</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Utiliser aussi “l’auto-documentation” pour les noms de répertoire !</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="emoji" data-emoji="negative_squared_cross_mark">❎</span> pas de répertoires avec votre prénom, votre nom ou vos initiales.</p>
+</div>
+</div>
+</div>
+<p>…au risque de se retrouver avec ça : <img data-src="img/prenoms_repertoires.png"> Taille totale : 7 Go</p>
 </section>
 <section id="pas-dambiguïté-sur-les-packages-utilisés" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="four">4️⃣</span> Pas d’ambiguïté sur les <em>packages</em> utilisés</h2>
@@ -1437,6 +1464,36 @@ _Workflow_ (version littéraire) :
 <li>Mieux vaut noter <code>package1::superFonction</code> et <code>package2::superFonction</code></li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+</section>
+<section id="pas-dambiguïté-sur-les-packages-utilisés-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="four">4️⃣</span> Pas d’ambiguïté sur les <em>packages</em> utilisés</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><em>Spécial conj</em></strong></p>
+</div>
+<div class="callout-content">
+<p>Dès que vos codes font appels à des fonctions des packages “maison” tels que <code>pRev</code> ou <code>RConj</code> : ajoutez le nom du package devant la fonction. Lors des montées de version des packages, vous retrouverez facilement les endroits dans vos codes qui peuvent être affectés.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><em>Astuce RStudio</em></strong></p>
+</div>
+<div class="callout-content">
+<p><code>Ctrl+Maj+F</code> : permet de chercher un terme dans l’ensemble des scripts d’un répertoire.<br>
+<span class="emoji" data-emoji="arrow_right">➡️</span> pour retrouver facilement les appels à un package donné.</p>
 </div>
 </div>
 </div>
@@ -1747,61 +1804,242 @@ _Workflow_ (version littéraire) :
 <li>Un excellent <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/02-projects/">workshop sur la reproductibilité avec R</a></li>
 </ul>
 <!-- {{< include applications_r/_application2.qmd >}} -->
+<!-- # III- Formats de données -->
+<!-- ## Enjeux -->
+<!-- ::: {.incremental} -->
+<!-- - Le choix d'un format de données répond à un [**arbitrage**]{.orange} entre plusieurs critères : -->
+<!--   - [**Finalité**]{.blue2} (traitement, analyse, diffusion) -->
+<!--   - [**Public cible**]{.blue2} -->
+<!--   - [**Volumétrie**]{.blue2} -->
+<!-- ::: -->
+<!-- ## Recommandations {.smaller} -->
+<!-- - Eviter impérativement les formats de données adhérents à un langage (`RDS`, `RData`, `fst`, `sas7bdat`, etc.). -->
+<!-- ::: {.incremental} -->
+<!-- - Deux formats à privilégier : -->
+<!--   - [**CSV**]{.orange} : pour la [**plupart des usages courants**]{.blue2} -->
+<!--     - _Avantage_ : [**non-compressé**]{.blue2} donc facilement [**lisible**]{.blue2} -->
+<!--     - _Inconvénients_ : pas de gestion des méta-données, peu adapté aux données volumineuses -->
+<!--   - [**Parquet**]{.orange} : pour le traitement de [**données volumineuses**]{.blue2} -->
+<!--     - [**Compressé**]{.blue2} et très [**performant**]{.blue2} en lecture/écriture -->
+<!--     - Gestion native des méta-données -->
+<!-- ::: -->
+<!-- {{< include applications_r/_application3.qmd >}} -->
 </section></section>
 <section>
-<section id="iii--formats-de-données" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>III- Formats de données</h1>
+<section id="iv--environnements-reproductibles" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>IV- Environnements reproductibles</h1>
 
+</section>
+<section id="expérience-de-pensée" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Expérience de pensée</h2>
+<div>
+<ul>
+<li class="fragment"><p>Imaginons la situation suivante :</p>
+<ul>
+<li class="fragment">J’installe une version de <code>R</code> sur mon poste</li>
+<li class="fragment">Je développe un projet en installant les <em>packages</em> nécessaires</li>
+<li class="fragment">Une fois terminé, je passe au projet suivant, et ainsi de suite.</li>
+</ul></li>
+<li class="fragment"><p>Quels <span class="orange"><strong>problèmes</strong></span> puis-je rencontrer au fil des projets ?</p></li>
+<li class="fragment"><p>Est-il facile de <span class="orange"><strong>partager</strong></span> un de mes projets ?</p></li>
+</ul>
+</div>
 </section>
 <section id="enjeux-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Enjeux</h2>
-<div>
 <ul>
-<li class="fragment">Le choix d’un format de données répond à un <span class="orange"><strong>arbitrage</strong></span> entre plusieurs critères :
+<li><span class="orange"><strong>Version de</strong></span> <span class="blue2"><strong>R</strong></span> <span class="orange"><strong>fixe</strong></span>, celle de l’installation système</li>
+</ul>
+<div class="fragment">
 <ul>
-<li class="fragment"><span class="blue2"><strong>Finalité</strong></span> (traitement, analyse, diffusion)</li>
-<li class="fragment"><span class="blue2"><strong>Public cible</strong></span></li>
-<li class="fragment"><span class="blue2"><strong>Volumétrie</strong></span></li>
-</ul></li>
+<li><span class="orange"><strong>Conflits de version</strong></span> : différents projets peuvent requérir différentes versions d’un même <em>package</em>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="orange"><strong>Reproductibilité limitée</strong></span> : difficile de dire quel projet nécessite quel <em>package</em>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="orange"><strong>Portabilité limitée</strong></span> : difficile de préciser dans un fichier les dépendances spécifiques à un projet.</li>
 </ul>
 </div>
 </section>
-<section id="recommandations" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Recommandations</h2>
+<section id="des-environnements-reproductibles-avec-renv" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Des environnements reproductibles avec <code>renv</code></h2>
 <ul>
-<li>Eviter impérativement les formats de données adhérents à un langage (<code>RDS</code>, <code>RData</code>, <code>fst</code>, <code>sas7bdat</code>, etc.).</li>
+<li><code>renv</code> permet de créer des <strong>env</strong>ironnements <strong>r</strong>eproductibles</li>
 </ul>
-<div>
+<div class="fragment">
 <ul>
-<li class="fragment">Deux formats à privilégier :
+<li><span class="orange"><strong>Isolation</strong></span> : chaque projet dispose de sa propre librairie de packages</li>
+</ul>
+</div>
+<div class="fragment">
 <ul>
-<li class="fragment"><span class="orange"><strong>CSV</strong></span> : pour la <span class="blue2"><strong>plupart des usages courants</strong></span>
+<li><span class="orange"><strong>Reproductibilité</strong></span> : <code>renv</code> enregistre les versions exactes des <em>packages</em> nécessaires au projet</li>
+</ul>
+</div>
+<div class="fragment">
 <ul>
-<li class="fragment"><em>Avantage</em> : <span class="blue2"><strong>non-compressé</strong></span> donc facilement <span class="blue2"><strong>lisible</strong></span></li>
-<li class="fragment"><em>Inconvénients</em> : pas de gestion des méta-données, peu adapté aux données volumineuses</li>
-</ul></li>
-<li class="fragment"><span class="orange"><strong>Parquet</strong></span> : pour le traitement de <span class="blue2"><strong>données volumineuses</strong></span>
-<ul>
-<li class="fragment"><span class="blue2"><strong>Compressé</strong></span> et très <span class="blue2"><strong>performant</strong></span> en lecture/écriture</li>
-<li class="fragment">Gestion native des méta-données</li>
-</ul></li>
-</ul></li>
+<li><span class="orange"><strong>Portabilité</strong></span>: un tiers peut exécuter le projet avec les mêmes spécifications</li>
 </ul>
 </div>
 </section>
-<section id="application-3-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 3</h2>
+<section id="utilisation-de-renv" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Utilisation de <code>renv</code></h2>
+<ol type="1">
+<li><span class="orange"><strong>Initialisation</strong></span> (<code>init</code>) de l’environnement local du projet</li>
+</ol>
+<div class="fragment">
+<ol start="2" type="1">
+<li><span class="orange"><strong>Développement</strong></span> du projet</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li><span class="orange"><strong>Enregistrement</strong></span> (<code>snapshot</code>) des versions des <em>packages</em> installés</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li><span class="orange"><strong>Restauration</strong></span> (<code>restore</code>) d’un environnement</li>
+</ol>
+</div>
+</section>
+<section id="initialisation-de-lenvironnement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="one">1️⃣</span> Initialisation de l’environnement</h2>
+<div>
+<ul>
+<li class="fragment"><code>renv::init()</code> dans un projet RStudio crée :
+<ul>
+<li class="fragment">Un dossier <code>renv</code> et le fichier <code>.Rprofile</code> : activation automatique de l’environnement</li>
+<li class="fragment">Le fichier <code>renv.lock</code> : versions des <em>packages</em> installés</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/renv_init.png" height="400"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="développement-du-projet" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="two">2️⃣</span> Développement du projet</h2>
+<div>
+<ul>
+<li class="fragment">Une fois l’environnement initialisé, on développe le projet de manière habituelle :
+<ul>
+<li class="fragment">Installations/suppressions/mises à jour de packages</li>
+<li class="fragment">Ecriture de scripts</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><code>renv::status()</code> : indique les <em>packages</em> installés/supprimés par rapport au fichier <code>renv.lock</code></li>
+</ul>
+</div>
+</section>
+<section id="enregistrement-de-lenvironnement" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="three">3️⃣</span> Enregistrement de l’environnement</h2>
+<ul>
+<li><code>renv::snapshot()</code> : enregistre les versions des <em>packages</em> installés dans le fichier <code>renv.lock</code></li>
+<li>Ne pas oublier de committer le fichier <code>renv.lock</code>!</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/renv_snapshot.png" height="350"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="restauration-de-lenvironnement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><span class="emoji" data-emoji="four">4️⃣</span> Restauration de l’environnement</h2>
+<ul>
+<li><code>renv::restore()</code> : installe/désinstalle les <em>packages</em> nécessaires pour arriver à l’état spécifié dans le fichier <code>renv.lock</code></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><span class="orange"><strong>Portabilité</strong></span> : un tiers peut recréer un environnement avec les mêmes spécifications</li>
+</ul>
+</div>
+</section>
+<section id="application-4-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Application 4</h2>
 <div class="callout callout-tip no-icon callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Manipulation des formats CSV et Parquet</strong></p>
+<p><strong>Partie 1 : prise en main de la librairie <code>renv</code></strong></p>
 </div>
 <div class="callout-content">
 <div>
-<ol type="1">
-<li class="fragment">Effacer la base <code>individu_reg.csv</code></li>
-<li class="fragment">Modifier le script <code>get_data.R</code> pour écrire les données au format <code>Parquet</code> à l’aide de la fonction <code>arrow::write_parquet</code></li>
-<li class="fragment">Modifier la phase d’import dans <code>script.R</code> pour importer le fichier <code>Parquet</code> à l’aide de la fonction <code>arrow::read_parquet</code></li>
+<ol start="0" type="1">
+<li class="fragment"><p>Installer le package <a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code></a></p></li>
+<li class="fragment"><p>Taper dans la console <code>renv::init()</code>, <strong>lire le message</strong> et accepter.</p></li>
+<li class="fragment"><p>Observer les nouveaux élements qui sont apparus dans le projet.</p></li>
+<li class="fragment"><p>Installer le <a href="https://gt.rstudio.com/">package <code>gt</code></a> et observer le message dans la console.</p></li>
+<li class="fragment"><p>Dans la partie sur les statistiques descriptives d’âge, ajouter ce code :</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>stats_age <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">group_by</span>(<span class="at">decennie =</span> <span class="fu">decennie_a_partir_annee</span>(age)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">summarise</span>(<span class="fu">n</span>())</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>table_age <span class="ot">&lt;-</span> gt<span class="sc">::</span><span class="fu">gt</span>(stats_age) <span class="sc">%&gt;%</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>  gt<span class="sc">::</span><span class="fu">tab_header</span>(</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    <span class="at">title =</span> <span class="st">"Distribution des âges dans notre population"</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>  gt<span class="sc">::</span><span class="fu">fmt_number</span>(</span>
+<span id="cb5-10"><a href="#cb5-10"></a>    <span class="at">columns =</span> <span class="st">`</span><span class="at">n()</span><span class="st">`</span>,</span>
+<span id="cb5-11"><a href="#cb5-11"></a>    <span class="at">sep_mark =</span> <span class="st">" "</span>,</span>
+<span id="cb5-12"><a href="#cb5-12"></a>    <span class="at">decimals =</span> <span class="dv">0</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a>  gt<span class="sc">::</span><span class="fu">cols_label</span>(</span>
+<span id="cb5-15"><a href="#cb5-15"></a>    <span class="at">decennie =</span> <span class="st">"Tranche d'âge"</span>,</span>
+<span id="cb5-16"><a href="#cb5-16"></a>    <span class="st">`</span><span class="at">n()</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Population"</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="application-4-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Application 4</h2>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Partie 2 : faire un <em>snapshot</em> de l’environnement</strong></p>
+</div>
+<div class="callout-content">
+<div style="margin-left: 30px;">
+<ol start="5" type="1">
+<li class="fragment">Dans la console, faire <code>renv::status()</code> et observer le message.</li>
+<li class="fragment">Effectuer <code>renv::snapshot()</code> pour intégrer les nouveaux packages au <em>lockfile</em></li>
+<li class="fragment">Faire un <em>commit</em> / <em>push</em> des fichiers <code>script.R</code>, <code>.Rprofile</code>, <code>renv.lock</code> et du dossier <code>renv/</code>.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="application-4-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Application 4</h2>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Partie 3 : test de la portabilité (facultatif)</strong></p>
+</div>
+<div class="callout-content">
+<div style="margin-left: 30px;">
+<ol start="8" type="1">
+<li class="fragment">Ouvrir un nouveau service <code>RStudio</code> sur le <code>SSPCloud</code></li>
+<li class="fragment">Cloner votre dépôt</li>
+<li class="fragment">Exécuter <code>renv::restore()</code> pour installer les packages nécessaires à l’exécution du projet</li>
+<li class="fragment">Vérifier que le <code>script.R</code> s’exécute correctement dans ce nouvel environnement.</li>
 </ol>
 </div>
 </div>
@@ -1814,8 +2052,7 @@ _Workflow_ (version littéraire) :
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <ul>
-<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application3/script.R">script.R</a></li>
-<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application3/get_data.R">get_data.R</a></li>
+<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application4/script.R">script.R</a></li>
 </ul>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
