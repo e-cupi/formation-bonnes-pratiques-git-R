@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "",
+    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
+    "href": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "",
+    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#crédits",
+    "href": "index.html#crédits",
+    "title": "Formation aux bonnes pratiques `Git` et `R`",
+    "section": "Crédits",
+    "text": "Crédits\nCette formation a été conçue de manière collaborative par des équipes de l’Insee et coordonnée par Romain Avouac et Lino Galiana.\nElle a bénéficié des contributions de : Romain Avouac, Julien Blasco, Thomas Faria, Lino Galiana, Pierre Lamarche, Romain Lesur Olivier Meslin, Olivier Pucher, Clément Rousset, Mohamed Seikouri et Tom Seimandi.\nLes supports et le code source (Github InseeFrLab ) sont librement réutilisables et disponibles sous licence MIT."
+  },
+  {
     "objectID": "slides/light.html#introduction",
     "href": "slides/light.html#introduction",
     "title": "Bonnes pratiques pour les projets statistiques",
@@ -172,7 +193,7 @@
     "href": "slides/light.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS Voir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir les fiches utilitR sur le sujet."
   },
   {
     "objectID": "slides/light.html#application-0",
@@ -235,7 +256,7 @@
     "href": "slides/light.html#divergence-dhistoriques-cas-simple",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Divergence d’historiques : cas simple",
-    "text": "Divergence d’historiques : cas simple\n\n\n\nAvec un pull, Git résout le problème via un fast-forward merge\n\nGitcrée un commit de merge de l’historique distant dans le local\n:warning_sign: : rend l’historique non linéaire"
+    "text": "Divergence d’historiques : cas simple\n\n\n\nAvec un pull, Git résout le problème via un fast-forward merge\n\nGitcrée un commit de merge de l’historique distant dans le local\nNota bene : rend l’historique non linéaire"
   },
   {
     "objectID": "slides/light.html#divergence-dhistoriques-cas-compliqué",
@@ -249,7 +270,7 @@
     "href": "slides/light.html#résoudre-les-conflits-linterface-rstudio",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Résoudre les conflits : l’interface RStudio",
-    "text": "Résoudre les conflits : l’interface RStudio\n - Choisir la version à conserver - Supprimer les “marquages” du conflit - Commit et push les changements"
+    "text": "Résoudre les conflits : l’interface RStudio\n\n\nChoisir la version à conserver\n\nSupprimer les “marquages” du conflit\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/light.html#application-5",
@@ -277,7 +298,7 @@
     "href": "slides/light.html#application-6",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 6",
-    "text": "Application 6\n\n\n\nBranches, issues et merge requests\n\n\n\n\nSur GitLab, chaque personne ouvre une Issue sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet\nVia Rstudio, créer une branche dont le nom indique la modification que vous allez apporter. ➡️ utiliser l’icône violette dans l’onglet Git, sur la droite. :warning_sign: : être attentif à la branche depuis laquelle vous créez votre nouvelle branche.\nVérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un commit avec les modifications de votre choix, puis pousser les changements.\nOuvrir une Merge Request (MR) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.\nChaque personne effectue finalement une review d’une MR d’un autre membre de l’équipe, suite à quoi les différentes MR peuvent être fusionnées\n\n\n\n\n\n❓ Question : quelle organisation pour merge dans la branche principale ?"
+    "text": "Application 6\n\n\n\nBranches, issues et merge requests\n\n\n\n\nSur GitLab, chaque personne ouvre une Issue sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet\nVia Rstudio, créer une branche dont le nom indique la modification que vous allez apporter. ➡️ utiliser l’icône violette dans l’onglet Git, sur la droite. ⚠️ : être attentif à la branche depuis laquelle vous créez votre nouvelle branche.\nVérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un commit avec les modifications de votre choix, puis pousser les changements.\nOuvrir une Merge Request (MR) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.\nChaque personne effectue finalement une review d’une MR d’un autre membre de l’équipe, suite à quoi les différentes MR peuvent être fusionnées\n\n\n\n\n\n❓ Question : quelle organisation pour merge dans la branche principale ?"
   },
   {
     "objectID": "slides/light.html#ressources-supplémentaires",
@@ -560,20 +581,6 @@
     "text": "Application 4\n\n\n\nPartie 2 : faire un snapshot de l’environnement\n\n\n\n\nDans la console, faire renv::status() et observer le message.\nEffectuer renv::snapshot() pour intégrer les nouveaux packages au lockfile\nFaire un commit / push des fichiers script.R, .Rprofile, renv.lock et du dossier renv/."
   },
   {
-    "objectID": "slides/light.html#application-4-3",
-    "href": "slides/light.html#application-4-3",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Application 4",
-    "text": "Application 4\n\n\n\nPartie 3 : test de la portabilité (facultatif)\n\n\n\n\nOuvrir un nouveau service RStudio sur le SSPCloud\nCloner votre dépôt\nExécuter renv::restore() pour installer les packages nécessaires à l’exécution du projet\nVérifier que le script.R s’exécute correctement dans ce nouvel environnement."
-  },
-  {
-    "objectID": "slides/light.html#checkpoint-1",
-    "href": "slides/light.html#checkpoint-1",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Checkpoint",
-    "text": "Checkpoint\n\n\n\n\nscript.R"
-  },
-  {
     "objectID": "slides/light.html#ressources-supplémentaires-3",
     "href": "slides/light.html#ressources-supplémentaires-3",
     "title": "Bonnes pratiques pour les projets statistiques",
@@ -753,7 +760,7 @@
     "href": "slides/complete.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS Voir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir les fiches utilitR sur le sujet."
   },
   {
     "objectID": "slides/complete.html#application-0",
@@ -816,7 +823,7 @@
     "href": "slides/complete.html#divergence-dhistoriques-cas-simple",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Divergence d’historiques : cas simple",
-    "text": "Divergence d’historiques : cas simple\n\n\n\nAvec un pull, Git résout le problème via un fast-forward merge\n\nGitcrée un commit de merge de l’historique distant dans le local\n:warning_sign: : rend l’historique non linéaire"
+    "text": "Divergence d’historiques : cas simple\n\n\n\nAvec un pull, Git résout le problème via un fast-forward merge\n\nGitcrée un commit de merge de l’historique distant dans le local\nNota bene : rend l’historique non linéaire"
   },
   {
     "objectID": "slides/complete.html#divergence-dhistoriques-cas-compliqué",
@@ -830,7 +837,7 @@
     "href": "slides/complete.html#résoudre-les-conflits-linterface-rstudio",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Résoudre les conflits : l’interface RStudio",
-    "text": "Résoudre les conflits : l’interface RStudio\n - Choisir la version à conserver - Supprimer les “marquages” du conflit - Commit et push les changements"
+    "text": "Résoudre les conflits : l’interface RStudio\n\n\nChoisir la version à conserver\n\nSupprimer les “marquages” du conflit\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/complete.html#application-5",
@@ -858,7 +865,7 @@
     "href": "slides/complete.html#application-6",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Application 6",
-    "text": "Application 6\n\n\n\nBranches, issues et merge requests\n\n\n\n\nSur GitLab, chaque personne ouvre une Issue sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet\nVia Rstudio, créer une branche dont le nom indique la modification que vous allez apporter. ➡️ utiliser l’icône violette dans l’onglet Git, sur la droite. :warning_sign: : être attentif à la branche depuis laquelle vous créez votre nouvelle branche.\nVérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un commit avec les modifications de votre choix, puis pousser les changements.\nOuvrir une Merge Request (MR) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.\nChaque personne effectue finalement une review d’une MR d’un autre membre de l’équipe, suite à quoi les différentes MR peuvent être fusionnées\n\n\n\n\n\n❓ Question : quelle organisation pour merge dans la branche principale ?"
+    "text": "Application 6\n\n\n\nBranches, issues et merge requests\n\n\n\n\nSur GitLab, chaque personne ouvre une Issue sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet\nVia Rstudio, créer une branche dont le nom indique la modification que vous allez apporter. ➡️ utiliser l’icône violette dans l’onglet Git, sur la droite. ⚠️ : être attentif à la branche depuis laquelle vous créez votre nouvelle branche.\nVérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un commit avec les modifications de votre choix, puis pousser les changements.\nOuvrir une Merge Request (MR) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.\nChaque personne effectue finalement une review d’une MR d’un autre membre de l’équipe, suite à quoi les différentes MR peuvent être fusionnées\n\n\n\n\n\n❓ Question : quelle organisation pour merge dans la branche principale ?"
   },
   {
     "objectID": "slides/complete.html#ressources-supplémentaires",
@@ -1141,20 +1148,6 @@
     "text": "Application 4\n\n\n\nPartie 2 : faire un snapshot de l’environnement\n\n\n\n\nDans la console, faire renv::status() et observer le message.\nEffectuer renv::snapshot() pour intégrer les nouveaux packages au lockfile\nFaire un commit / push des fichiers script.R, .Rprofile, renv.lock et du dossier renv/."
   },
   {
-    "objectID": "slides/complete.html#application-4-3",
-    "href": "slides/complete.html#application-4-3",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Application 4",
-    "text": "Application 4\n\n\n\nPartie 3 : test de la portabilité (facultatif)\n\n\n\n\nOuvrir un nouveau service RStudio sur le SSPCloud\nCloner votre dépôt\nExécuter renv::restore() pour installer les packages nécessaires à l’exécution du projet\nVérifier que le script.R s’exécute correctement dans ce nouvel environnement."
-  },
-  {
-    "objectID": "slides/complete.html#checkpoint-1",
-    "href": "slides/complete.html#checkpoint-1",
-    "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Checkpoint",
-    "text": "Checkpoint\n\n\n\n\nscript.R"
-  },
-  {
     "objectID": "slides/complete.html#vers-une-reproductibilité-optimale",
     "href": "slides/complete.html#vers-une-reproductibilité-optimale",
     "title": "Bonnes pratiques pour les projets statistiques",
@@ -1253,8 +1246,8 @@
     "text": "Application 5\n\n\n\nModélisation d’un projet sous forme de pipeline de données (suite)\n\n\n\nA partir des fonctions suivantes, créer deux nouvelles cibles (clean_data et table_age) qui automatisent la production du tableau gt\n\nretraitement_donnees &lt;- function(df){\n  df &lt;- df %&gt;%\n    mutate(aged = as.numeric(aged))\n  df$sexe &lt;- df$sexe %&gt;%\n    as.character() %&gt;%\n    fct_recode(Homme = \"1\", Femme = \"2\")\n  return(df)\n}\n\n\nproduce_table_age &lt;- function(df){\n  stats_age &lt;- df %&gt;%\n    group_by(decennie = decennie_a_partir_annee(aged)) %&gt;%\n    summarise(n())\n  \n  table_age &lt;- gt::gt(stats_age) %&gt;%\n    gt::tab_header(\n      title = \"Distribution des âges dans notre population\"\n    ) %&gt;%\n    gt::fmt_number(\n      columns = `n()`,\n      sep_mark = \" \",\n      decimals = 0\n    ) %&gt;%\n    gt::cols_label(\n      decennie = \"Tranche d'âge\",\n      `n()` = \"Population\"\n    )\n  return(table_age)\n}\n\nEn console, visualiser l’état du pipeline avec tar_visnetwork puis exécuter tar_make(). Analyser la sortie dans la console.\nA l’aide de la fonction tar_read(table_age), visualiser la table des âges produite.\nAjouter les commandes suivantes au sein de la fonction retraitement_donnees pour la modifier:\n\ndf &lt;- df %&gt;%\n  mutate(\n    surf = factor(surf, ordered = TRUE),\n    cs1 = factor(cs1)\n  )\n\nDepuis la console, inspecter le _pipeline avec tar_visnetwork puis exécuter tar_make() pour lancer le pipeline. Analyser la sortie.\nSi vous avez le temps, continuer à enrichir votre pipeline\n\n\n\n\n:::"
   },
   {
-    "objectID": "slides/complete.html#checkpoint-2",
-    "href": "slides/complete.html#checkpoint-2",
+    "objectID": "slides/complete.html#checkpoint-1",
+    "href": "slides/complete.html#checkpoint-1",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Checkpoint",
     "text": "Checkpoint\n\n\n\n\nfunctions.R\n_targets.R"
@@ -1316,8 +1309,8 @@
     "text": "Application 6\n\n\n\nIntroduction à la publication reproductible (suite)\n\n\n\nDans script.R, nous avions créé un graphique p.png.\n\nA partir des exemples de la documentation introduire cette figure\nLa faire précéder d’une phrase d’introduction.\nÊtes-vous sûr que cette figure est à jour ?\n\nA partir de la fonction suivante à mettre dans R/functions.R, créer une nouvelle target graph_part_hommes dans _targets.R.\n\nfigure_part_homme_age &lt;- function(df){\n  p &lt;- df %&gt;%\n    group_by(aged, sexe) %&gt;%\n    summarise(SH_sexe = n()) %&gt;%\n    group_by(aged) %&gt;%\n    mutate(SH_sexe = SH_sexe / sum(SH_sexe)) %&gt;%\n    filter(sexe == \"Homme\") %&gt;%\n    ggplot() +\n    geom_bar(aes(x = aged, y = SH_sexe), stat = \"identity\") +\n    geom_point(\n      aes(x = aged, y = SH_sexe),\n      stat = \"identity\", color = \"red\") +\n    coord_cartesian(c(0, 100))\n  return(p)\n}\n\nFaire tourner le pipeline (tar_make)\nPour être certain que votre note utilise la dernière version du pipeline, introduire un tar_make() dans votre document à la suite du library(targets)\nCliquer sur le bouton Render pour mettre à jour votre note"
   },
   {
-    "objectID": "slides/complete.html#checkpoint-3",
-    "href": "slides/complete.html#checkpoint-3",
+    "objectID": "slides/complete.html#checkpoint-2",
+    "href": "slides/complete.html#checkpoint-2",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Checkpoint",
     "text": "Checkpoint\n\n\n\n\nreport.qmd\nfunctions.R\n_targets.R"
@@ -1328,26 +1321,5 @@
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Ressources supplémentaires",
     "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nLa documentation utilitR\nUn cours complet sur la reproductibilité avec R\nCours Reproductibilité et bonnes pratiques pour les projets de data science de l’ENSAE\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Slack grrr, très dynamique\nLe salon Tchap Langage R\nPour l’utilisation de R à l’Insee : le salon Tchap Insee - Outils Stats v2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "",
-    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
-    "href": "index.html#formation-aux-bonnes-pratiques-avec-git-fa-brands-git-alt-et-fa-brands-r-project",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "",
-    "text": "Un parcours de formation construit par l’Insee.\n\nTous les supports sont sur le Github InseeFrLab   \n\n\n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion allégée de la formation aux bonnes pratiques en\nR et en Git, axée autour de\nl'apprentissage de Git, de la structure des projets R et\nde la qualité du code R\n\n\nVersion en une journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion complète de la formation aux bonnes pratiques en\nR et en Git, axée autour de la notion de\nreproductibilité et de la collaboration.\n\n\nVersion en deux jours\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nVersion plus succincte pour sensibiliser les\nresponsables hiérarchiques au sujet\ndes bonnes pratiques de code\nR et en Git.\n\n\nVersion 1/2 journée\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n  \n     \n      \n          \n            \n          \n          \n            \n            \n              \nPrésentation rapide sous forme de teasing\nde la formation aux bonnes pratiques en\nR et en Git.\n\n\nVersion en 1h\n\n              \n                \n              \n            \n            \n                \n                    \n                        Slides\n                    \n                \n            \n          \n        \n      \n     \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#crédits",
-    "href": "index.html#crédits",
-    "title": "Formation aux bonnes pratiques `Git` et `R`",
-    "section": "Crédits",
-    "text": "Crédits\nCette formation a été conçue de manière collaborative par des équipes de l’Insee et coordonnée par Romain Avouac et Lino Galiana.\nElle a bénéficié des contributions de : Romain Avouac, Julien Blasco, Thomas Faria, Lino Galiana, Pierre Lamarche, Romain Lesur Olivier Meslin, Olivier Pucher, Clément Rousset, Mohamed Seikouri et Tom Seimandi.\nLes supports et le code source (Github InseeFrLab ) sont librement réutilisables et disponibles sous licence MIT."
   }
 ]

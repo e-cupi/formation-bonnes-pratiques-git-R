@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.353">
+  <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Romain Avouac, Thomas Faria, Lino Galiana, Olivier Meslin, Tom Seimandi">
   <title>Formation aux bonnes pratiques Git et R - Bonnes pratiques pour les projets statistiques</title>
@@ -393,7 +393,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <meta name="twitter:title" content="Formation aux bonnes pratiques Git et R - Bonnes pratiques pour les projets statistiques">
 <meta name="twitter:description" content="Une formation aux bonnes pratiques avec Git et R">
-<meta name="twitter:image" content="https://e-cupi.github.io/formation-bonnes-pratiques-git-R//cards/version-light/cheetah.png">
+<meta name="twitter:image" content="https://github.com/e-cupi/formation-bonnes-pratiques-git-R/cards/version-light/cheetah.png">
 <meta name="twitter:image-height" content="1024">
 <meta name="twitter:image-width" content="1024">
 <meta name="twitter:card" content="summary_large_image">
@@ -834,7 +834,8 @@ _Workflow_ (version littéraire) :
 <ul>
 <li>(plus) complexe à initialiser</li>
 <li>authentification automatique</li>
-<li>seul type d’authentification possible sous AUS Voir les fiches <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git">utilitR</a> sur le sujet.</li>
+<li>seul type d’authentification possible sous AUS.<br>
+Voir les fiches <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git">utilitR</a> sur le sujet.</li>
 </ul></li>
 </ul>
 </section>
@@ -1041,7 +1042,7 @@ _Workflow_ (version littéraire) :
 <li>Avec un <code>pull</code>, <code>Git</code> résout le problème via un <span class="blue2"><strong><em>fast-forward merge</em></strong></span>
 <ul>
 <li><code>Git</code>crée un commit de <em>merge</em> de l’historique distant dans le local</li>
-<li>:warning_sign: : rend l’historique non linéaire</li>
+<li><em>Nota bene</em> : rend l’historique non linéaire</li>
 </ul></li>
 </ul>
 </div>
@@ -1062,7 +1063,14 @@ _Workflow_ (version littéraire) :
 </section>
 <section id="résoudre-les-conflits-linterface-rstudio" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Résoudre les conflits : l’interface RStudio</h2>
-<p><img data-src="img/rstudio_conflit.png"> - Choisir la version à conserver - Supprimer les “marquages” du conflit - <code>Commit</code> et <code>push</code> les changements</p>
+
+<img data-src="img/rstudio_conflit.png" class="r-stretch"><ul>
+<li>Choisir la version à conserver<br>
+</li>
+<li>Supprimer les “marquages” du conflit<br>
+</li>
+<li><code>Commit</code> et <code>push</code> les changements</li>
+</ul>
 </section>
 <section id="application-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 5</h2>
@@ -1133,7 +1141,7 @@ _Workflow_ (version littéraire) :
 <div>
 <ol type="1">
 <li class="fragment">Sur <code>GitLab</code>, chaque personne ouvre une <code>Issue</code> sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet</li>
-<li class="fragment">Via <code>Rstudio</code>, créer une branche dont le nom indique la modification que vous allez apporter. <span class="emoji" data-emoji="arrow_right">➡️</span> utiliser l’icône violette dans l’onglet <code>Git</code>, sur la droite. :warning_sign: : être attentif à la branche <em>depuis laquelle</em> vous créez votre nouvelle branche.</li>
+<li class="fragment">Via <code>Rstudio</code>, créer une branche dont le nom indique la modification que vous allez apporter. <span class="emoji" data-emoji="arrow_right">➡️</span> utiliser l’icône violette dans l’onglet <code>Git</code>, sur la droite. <span class="emoji" data-emoji="warning">⚠️</span> : être attentif à la branche <em>depuis laquelle</em> vous créez votre nouvelle branche.</li>
 <li class="fragment">Vérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un <code>commit</code> avec les modifications de votre choix, puis pousser les changements.</li>
 <li class="fragment">Ouvrir une <code>Merge Request</code> (<code>MR</code>) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.</li>
 <li class="fragment">Chaque personne effectue finalement une <em>review</em> d’une <code>MR</code> d’un autre membre de l’équipe, suite à quoi les différentes <code>MR</code> peuvent être fusionnées</li>
@@ -2025,41 +2033,21 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 </div>
-</section>
-<section id="application-4-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 4</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Partie 3 : test de la portabilité (facultatif)</strong></p>
-</div>
-<div class="callout-content">
-<div style="margin-left: 30px;">
-<ol start="8" type="1">
-<li class="fragment">Ouvrir un nouveau service <code>RStudio</code> sur le <code>SSPCloud</code></li>
-<li class="fragment">Cloner votre dépôt</li>
-<li class="fragment">Exécuter <code>renv::restore()</code> pour installer les packages nécessaires à l’exécution du projet</li>
-<li class="fragment">Vérifier que le <code>script.R</code> s’exécute correctement dans ce nouvel environnement.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Checkpoint</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<ul>
-<li><a href="https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application4/script.R">script.R</a></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<p><img data-src="checkpoint.jpg"></p>
-</div>
-</div>
-</div>
+<!-- ## Application 4 -->
+<!-- :::{.callout-tip collapse="true" icon=false} -->
+<!-- ## Partie 3 : test de la portabilité (facultatif) -->
+<!-- :::{.incremental style="margin-left: 30px;"} -->
+<!-- 8. Ouvrir un nouveau service `RStudio` sur le `SSPCloud` -->
+<!-- 9. Cloner votre dépôt -->
+<!-- 10. Exécuter `renv::restore()` pour installer les packages nécessaires à l'exécution du projet -->
+<!-- 11. Vérifier que le `script.R` s'exécute correctement dans ce nouvel environnement. -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ## Checkpoint -->
+<!-- ::: {layout=[30,70]} -->
+<!-- - [script.R](https://raw.githubusercontent.com/InseeFrLab/formation-bonnes-pratiques-R/main/R/checkpoints/application4/script.R) -->
+<!-- ![](checkpoint.jpg){width=60%} -->
+<!-- ::: -->
 </section>
 <section id="ressources-supplémentaires-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Ressources supplémentaires</h2>
