@@ -115,21 +115,26 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 . . .
 
 ![](img/chargeDB.png)  
+
+
 ## :two: Utiliser des fonctions {.smaller}
 
 À ne pas reproduire chez vous
 
-![](img/chargeDB_annote.png)
+![](img/chargeDB_annote.png)  
+
+
 ## :two: Utiliser des fonctions {.smaller}
 
 À ne pas reproduire chez vous
 
-![](img/save_meta_data.png)
+![](img/save_meta_data.png)  
+
 ## :two: Utiliser des fonctions {.smaller}
 
 À ne pas reproduire chez vous
 
-![](img/save_meta_data_annote.png)
+![](img/save_meta_data_annote.png)  
 
 ## :three: Documenter son code
 
