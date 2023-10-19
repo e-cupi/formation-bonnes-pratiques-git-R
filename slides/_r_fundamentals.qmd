@@ -154,7 +154,7 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 :::
 
 
-## :three: Documenter son code
+## :three: Documenter son code {.smaller}
 
 ::: {.callout-tip}
 ## Utiliser aussi "l'auto-documentation" pour les noms de répertoire !
@@ -164,7 +164,7 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 :::
 
 ...au risque de se retrouver avec ça : 
-![](img/prenoms_repertoires.png)
+![](img/prenoms_repertoires.png){height="400" fig-align="center"}
 Taille totale : 7 Go
 
 ## :four: Pas d'ambiguïté sur les _packages_ utilisés {.smaller}
