@@ -246,7 +246,7 @@ un bon `.gitignore`)
 - [**ssh**]{.orange}
   - (plus) complexe à initialiser
   - authentification automatique 
-  - seul type d'authentification possible sous AUS
+  - seul type d'authentification possible sous AUS.  
 Voir les fiches [utilitR](https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git) sur le sujet.
 
 
