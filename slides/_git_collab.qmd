@@ -23,9 +23,10 @@
 
 . . .
 
-- `Git` résout le problème via un [***fast-forward merge***]{.blue2}
-    - Le commit distant est rajouté à l'historique local
-    - Les dépôts sont synchronisés
+- Avec un `pull`, `Git` résout le problème via un [***fast-forward merge***]{.blue2}
+    - `Git`crée un commit de _merge_ de l'historique distant dans le local 
+    - :warning_sign: : rend l'historique non linéaire 
+
 
 ## Divergence d'historiques : cas compliqué
 
@@ -37,53 +38,64 @@
 
 . . .
 
-- Deux stratégies possibles
-    - Le [**merge**]{.blue2}
-    - Le [**rebase**]{.blue2}
+- L'utilisateur doit résoudre le conflit
 
-## 1ère possibilité : le *merge*
+## Résoudre les conflits : l'interface RStudio
 
-![](img/merge.png)
+![](img/rstudio_conflit.png)
+- Choisir la version à conserver
+- Supprimer les "marquages" du conflit
+- `Commit` et `push` les changements
 
-. . .
 
-- `Git` crée un [**commit de merge**]{.blue2}
-    - Comportement par défaut (jusqu'à récemment)
-
-. . .
-
-- [**Inconvénient**]{.orange} : rend l'[**historique non-linéaire**]{.blue2} ([plus d'explications](https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge))
-
-## 2ème possibilité : le *rebase* (1/2)
-
-![](img/rebase1.png)
-
-. . .
-
-- `Git` effectue 3 étapes
-    - Supprime temporairement le commit local
-    - Réalise un *fast-forward merge*
-    - Rajoute le commit local au bout de l'historique
-
-## 2ème possibilité : le *rebase* (2/2)
-
-![](img/rebase2.png)
-
-. . .
-
-- [**Avantage**]{.orange} : l'historique reste [**linéaire**]{.blue2}
-
-. . .
-
-- [**Attention**]{.orange} : ne jamais *rebase* des commits déjà poussés sur un dépôt public ([plus d'explications](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing#s_rebase_peril))
-
-## Application 4 (suite) {.smaller}
-
-{{< include applications_git/_application4b.qmd >}}
 
 ## Application 5 {.smaller}
 
 {{< include applications_git/_application5.qmd >}}
+
+<!-- ## 1ère possibilité : le *merge* -->
+
+<!-- ![](img/merge.png) -->
+
+<!-- . . . -->
+
+<!-- - `Git` crée un [**commit de merge**]{.blue2} -->
+<!--     - Comportement par défaut (jusqu'à récemment) -->
+
+<!-- . . . -->
+
+<!-- - [**Inconvénient**]{.orange} : rend l'[**historique non-linéaire**]{.blue2} ([plus d'explications](https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge)) -->
+
+<!-- ## 2ème possibilité : le *rebase* (1/2) -->
+
+<!-- ![](img/rebase1.png) -->
+
+<!-- . . . -->
+
+<!-- - `Git` effectue 3 étapes -->
+<!--     - Supprime temporairement le commit local -->
+<!--     - Réalise un *fast-forward merge* -->
+<!--     - Rajoute le commit local au bout de l'historique -->
+
+<!-- ## 2ème possibilité : le *rebase* (2/2) -->
+
+<!-- ![](img/rebase2.png) -->
+
+<!-- . . . -->
+
+<!-- - [**Avantage**]{.orange} : l'historique reste [**linéaire**]{.blue2} -->
+
+<!-- . . . -->
+
+<!-- - [**Attention**]{.orange} : ne jamais *rebase* des commits déjà poussés sur un dépôt public ([plus d'explications](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing#s_rebase_peril)) -->
+
+<!-- ## Application 4 (suite) {.smaller} -->
+
+<!-- {{< include applications_git/_application4b.qmd >}} -->
+
+<!-- ## Application 5 {.smaller} -->
+
+<!-- {{< include applications_git/_application5.qmd >}} -->
 
 ## Le modèle des branches {auto-animate=true}
 
@@ -93,21 +105,21 @@
 
 ![](img/branches.png)
 
-## Exemple d'organisation : le *GitHub flow*
+<!-- ## Exemple d'organisation : le *GitHub flow* -->
 
-![](img/ghflow.png)
+<!-- ![](img/ghflow.png) -->
 
-Description plus détaillée : [ici](https://docs.github.com/en/get-started/quickstart/github-flow)
+<!-- Description plus détaillée : [ici](https://docs.github.com/en/get-started/quickstart/github-flow) -->
 
 
 ## Application 6 {.smaller}
 
 {{< include applications_git/_application6.qmd >}}
 
-## Application 7
+<!-- ## Application 7 -->
 
-{{< include applications_git/_application7.qmd >}}
+<!-- {{< include applications_git/_application7.qmd >}} -->
 
-## Application 8 (bonus)
+<!-- ## Application 8 (bonus) -->
 
-{{< include applications_git/_application8.qmd >}}
+<!-- {{< include applications_git/_application8.qmd >}} -->
