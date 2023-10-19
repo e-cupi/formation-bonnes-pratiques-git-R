@@ -110,9 +110,11 @@ portion de code plus de deux fois ([**_don't repeat yourself_ (DRY)**]{.red2})
 
 ## :two: Utiliser des fonctions {.smaller}
 
-À ne pas reproduire chez vous
+À ne pas reproduire chez vous. La fonction doit mobiliser ses paramètres et, théoriquement, rien d'autre.
 
-![](img/chargeDB.png)
+. . .
+
+![](img/chargeDB.png)  
 ## :two: Utiliser des fonctions {.smaller}
 
 À ne pas reproduire chez vous
