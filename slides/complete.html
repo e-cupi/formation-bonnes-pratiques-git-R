@@ -1023,11 +1023,10 @@ _Workflow_ (version littéraire) :
 <li class="fragment">Une personne aura la responsabilité d’être <span class="blue2"><strong>mainteneur</strong></span></li>
 <li class="fragment">Deux à trois personnes seront <span class="blue2"><strong>développeurs</strong></span></li>
 </ul></li>
-<li class="fragment">Le mainteneur crée un dépôt sur <code>Github</code>. Il/Elle donne des droits au(x) développeur(s) du projet</li>
-<li class="fragment">Créer une copie locale (clone) du projet sur son service <code>RStudio</code> du <a href="https://datalab.sspcloud.fr/home">Datalab</a></li>
+<li class="fragment">Le mainteneur crée un dépôt sur <code>Gitlab</code>. Il/Elle donne des droits au(x) développeur(s) du projet</li>
+<li class="fragment">Créer une copie locale (clone) du projet sur son <code>Z</code></li>
 <li class="fragment">Créer un fichier <code>&lt;votre_nom&gt;-&lt;votre_prenom&gt;.md</code>. Écrire dedans trois phrases de son choix sans ponctuation ni majuscules, puis <code>commit</code> et <code>push</code> les modifications</li>
-<li class="fragment"><strong>À ce stade, une seule personne (la plus rapide) devrait ne pas avoir rencontré de rejet du <code>push</code>.</strong> C’est normal ! Le premier ayant fait un <code>push</code> a modifié le dépôt commun ; les autres doivent intégrer ces modifications dans leur version locale (<code>pull</code>) avant d’avoir le droit de proposer un changement.</li>
-<li class="fragment">Néanmoins, le <code>pull</code> renvoie également une erreur : <code>Git</code> ne parvient pas à résoudre la divergence d’historique. Essayons de comprendre le problème et les solutions possibles.</li>
+<li class="fragment"><strong>À ce stade, une seule personne (la plus rapide) devrait ne pas avoir rencontré de rejet du <code>push</code>.</strong> C’est normal ! Le premier ayant fait un <code>push</code> a modifié le dépôt commun ; les autres doivent intégrer ces modifications dans leur version locale (<code>pull</code>) avant d’avoir le droit de proposer un changement. <!-- 6. Néanmoins, le `pull` renvoie également une erreur : `Git` ne parvient pas à résoudre la divergence d'historique. Essayons de comprendre le problème et les solutions possibles. --></li>
 </ol>
 </div>
 </div>
@@ -1039,10 +1038,10 @@ _Workflow_ (version littéraire) :
 
 <img data-src="img/ff.png" class="r-stretch"><div class="fragment">
 <ul>
-<li><code>Git</code> résout le problème via un <span class="blue2"><strong><em>fast-forward merge</em></strong></span>
+<li>Avec un <code>pull</code>, <code>Git</code> résout le problème via un <span class="blue2"><strong><em>fast-forward merge</em></strong></span>
 <ul>
-<li>Le commit distant est rajouté à l’historique local</li>
-<li>Les dépôts sont synchronisés</li>
+<li><code>Git</code>crée un commit de <em>merge</em> de l’historique distant dans le local</li>
+<li>:warning_sign: : rend l’historique non linéaire</li>
 </ul></li>
 </ul>
 </div>
@@ -1057,82 +1056,13 @@ _Workflow_ (version littéraire) :
 </div>
 <div class="fragment">
 <ul>
-<li>Deux stratégies possibles
-<ul>
-<li>Le <span class="blue2"><strong>merge</strong></span></li>
-<li>Le <span class="blue2"><strong>rebase</strong></span></li>
-</ul></li>
+<li>L’utilisateur doit résoudre le conflit</li>
 </ul>
 </div>
 </section>
-<section id="ère-possibilité-le-merge" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>1ère possibilité : le <em>merge</em></h2>
-
-<img data-src="img/merge.png" class="r-stretch"><div class="fragment">
-<ul>
-<li><code>Git</code> crée un <span class="blue2"><strong>commit de merge</strong></span>
-<ul>
-<li>Comportement par défaut (jusqu’à récemment)</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><span class="orange"><strong>Inconvénient</strong></span> : rend l’<span class="blue2"><strong>historique non-linéaire</strong></span> (<a href="https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge">plus d’explications</a>)</li>
-</ul>
-</div>
-</section>
-<section id="ème-possibilité-le-rebase-12" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>2ème possibilité : le <em>rebase</em> (1/2)</h2>
-
-<img data-src="img/rebase1.png" class="r-stretch"><div class="fragment">
-<ul>
-<li><code>Git</code> effectue 3 étapes
-<ul>
-<li>Supprime temporairement le commit local</li>
-<li>Réalise un <em>fast-forward merge</em></li>
-<li>Rajoute le commit local au bout de l’historique</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="ème-possibilité-le-rebase-22" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>2ème possibilité : le <em>rebase</em> (2/2)</h2>
-
-<img data-src="img/rebase2.png" class="r-stretch"><div class="fragment">
-<ul>
-<li><span class="orange"><strong>Avantage</strong></span> : l’historique reste <span class="blue2"><strong>linéaire</strong></span></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><span class="orange"><strong>Attention</strong></span> : ne jamais <em>rebase</em> des commits déjà poussés sur un dépôt public (<a href="https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing#s_rebase_peril">plus d’explications</a>)</li>
-</ul>
-</div>
-</section>
-<section id="application-4-suite" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 4 (suite)</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Synchronisation des dépôts</strong></p>
-</div>
-<div class="callout-content">
-<div>
-<ol start="7" type="1">
-<li class="fragment">Dans notre cas, on peut utiliser <em>rebase</em> sans trop de risques. Comme l’interface <code>RStudio</code> ne permet pas (encore) de sélectionner la stratégie de <code>pull</code>, on va préciser la configuration voulue via une commande passée dans le terminal
-<ul>
-<li class="fragment"><code>git config pull.rebase true</code></li>
-</ul></li>
-<li class="fragment">Pour ceux dont le <code>push</code> a été refusé, effectuer un <code>pull</code> des modifications distantes via l’interface <code>RStudio</code></li>
-<li class="fragment">Effectuer à nouveau un <code>push</code> de vos modifications locales</li>
-<li class="fragment">Les derniers membres du groupe devront refaire les étapes précédentes, potentiellement plusieurs fois, pour pouvoir <code>push</code> leurs modifications locales</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<p>❓ <strong>Question</strong> : que se serait-il passé si les différents membres du groupe avaient effectué leurs modifications sur un seul et même fichier ?</p>
+<section id="résoudre-les-conflits-linterface-rstudio" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Résoudre les conflits : l’interface RStudio</h2>
+<p><img data-src="img/rstudio_conflit.png"> - Choisir la version à conserver - Supprimer les “marquages” du conflit - <code>Commit</code> et <code>push</code> les changements</p>
 </section>
 <section id="application-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 5</h2>
@@ -1146,7 +1076,7 @@ _Workflow_ (version littéraire) :
 <ol type="1">
 <li class="fragment">On se place dans la même configuration que dans l’application précédente : un <span class="blue2"><strong>mainteneur</strong></span> et deux/trois <span class="blue2"><strong>développeurs</strong></span></li>
 <li class="fragment">Le mainteneur modifie le contenu de son fichier, puis <code>commit</code> et <code>push</code> les modifications</li>
-<li class="fragment">Sans faire de <code>pull</code> préalable, les développeurs modifient également le contenu du fichier du mainteneur, puis <code>commit</code> et <code>push</code> les modifications</li>
+<li class="fragment">Sans faire de <code>pull</code> préalable, les développeurs modifient également le contenu du fichier du [<strong>mainteneur</strong>], puis <code>commit</code> et <code>push</code> les modifications</li>
 <li class="fragment">Le <code>push</code> est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut <code>pull</code> les changements distants au préalable. Mais <strong>cette fois, le <code>pull</code> est également rejeté</strong> : il y a un <strong>conflit</strong> entre l’historique du projet distant et celui du projet local. <code>Git</code> nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.</li>
 <li class="fragment">Utiliser l’interface de <code>RStudio</code> pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis <code>commit</code>/<code>push</code> les modifications</li>
 <li class="fragment">Comme dans l’application précédente, seul le développeur le plus rapide parvient à <code>push</code>. Les autres doivent répéter l’opération.</li>
@@ -1156,6 +1086,30 @@ _Workflow_ (version littéraire) :
 </div>
 </div>
 <p>❓ <strong>Question</strong> : comment limiter au maximum la survenue des conflits d’historique ?</p>
+<!-- ## 1ère possibilité : le *merge* -->
+<!-- ![](img/merge.png) -->
+<!-- . . . -->
+<!-- - `Git` crée un [**commit de merge**]{.blue2} -->
+<!--     - Comportement par défaut (jusqu'à récemment) -->
+<!-- . . . -->
+<!-- - [**Inconvénient**]{.orange} : rend l'[**historique non-linéaire**]{.blue2} ([plus d'explications](https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge)) -->
+<!-- ## 2ème possibilité : le *rebase* (1/2) -->
+<!-- ![](img/rebase1.png) -->
+<!-- . . . -->
+<!-- - `Git` effectue 3 étapes -->
+<!--     - Supprime temporairement le commit local -->
+<!--     - Réalise un *fast-forward merge* -->
+<!--     - Rajoute le commit local au bout de l'historique -->
+<!-- ## 2ème possibilité : le *rebase* (2/2) -->
+<!-- ![](img/rebase2.png) -->
+<!-- . . . -->
+<!-- - [**Avantage**]{.orange} : l'historique reste [**linéaire**]{.blue2} -->
+<!-- . . . -->
+<!-- - [**Attention**]{.orange} : ne jamais *rebase* des commits déjà poussés sur un dépôt public ([plus d'explications](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing#s_rebase_peril)) -->
+<!-- ## Application 4 (suite) {.smaller} -->
+<!-- {{< include applications_git/_application4b.qmd >}} -->
+<!-- ## Application 5 {.smaller} -->
+<!-- {{< include applications_git/_application5.qmd >}} -->
 </section>
 <section id="le-modèle-des-branches" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Le modèle des branches</h2>
@@ -1164,75 +1118,35 @@ _Workflow_ (version littéraire) :
 <section id="le-modèle-des-branches-1" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Le modèle des branches</h2>
 
+<!-- ## Exemple d'organisation : le *GitHub flow* -->
+<!-- ![](img/ghflow.png) -->
+<!-- Description plus détaillée : [ici](https://docs.github.com/en/get-started/quickstart/github-flow) -->
 <img data-src="img/branches.png" class="r-stretch"></section>
-<section id="exemple-dorganisation-le-github-flow" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Exemple d’organisation : le <em>GitHub flow</em></h2>
-
-<img data-src="img/ghflow.png" class="r-stretch"><p>Description plus détaillée : <a href="https://docs.github.com/en/get-started/quickstart/github-flow">ici</a></p>
-</section>
 <section id="application-6" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 6</h2>
 <div class="callout callout-tip no-icon callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Branches, <em>issues</em> et <em>pull requests</em></strong></p>
+<p><strong>Branches, <em>issues</em> et <em>merge requests</em></strong></p>
 </div>
 <div class="callout-content">
 <div>
 <ol type="1">
-<li class="fragment">Sur <code>GitHub</code>, chaque personne ouvre une <code>Issue</code> sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet</li>
-<li class="fragment">Créer une branche dont le nom indique la modification que vous allez apporter (ex : <code>ajout-authentification</code>)</li>
-<li class="fragment">Effectuer un <code>commit</code> avec les modifications de votre choix, puis pousser les changements sur une nouvelle branche du dépôt distant</li>
-<li class="fragment">Ouvrir une <code>Pull Request</code> (<code>PR</code>) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant. Spécifier que l’acceptation de la <code>Pull Request</code> entraînera la fermeture automatique de l’<code>Issue</code> associée en écrivant dans le corps de la <code>PR</code> : <code>close #N</code> où <code>N</code> est le numéro de l’<code>Issue</code> en question</li>
-<li class="fragment">Chaque personne effectue finalement une <em>review</em> d’une <code>PR</code> d’un autre membre de l’équipe, suite à quoi les différentes <code>PR</code> peuvent être fusionnées</li>
+<li class="fragment">Sur <code>GitLab</code>, chaque personne ouvre une <code>Issue</code> sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet</li>
+<li class="fragment">Via <code>Rstudio</code>, créer une branche dont le nom indique la modification que vous allez apporter. <span class="emoji" data-emoji="arrow_right">➡️</span> utiliser l’icône violette dans l’onglet <code>Git</code>, sur la droite. :warning_sign: : être attentif à la branche <em>depuis laquelle</em> vous créez votre nouvelle branche.</li>
+<li class="fragment">Vérifier que vous êtes bien positionné sur la nouvelle branche. Effectuer un <code>commit</code> avec les modifications de votre choix, puis pousser les changements.</li>
+<li class="fragment">Ouvrir une <code>Merge Request</code> (<code>MR</code>) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.</li>
+<li class="fragment">Chaque personne effectue finalement une <em>review</em> d’une <code>MR</code> d’un autre membre de l’équipe, suite à quoi les différentes <code>MR</code> peuvent être fusionnées</li>
 </ol>
 </div>
 </div>
 </div>
 </div>
 <p>❓ <strong>Question</strong> : quelle organisation pour merge dans la branche principale ?</p>
-</section>
-<section id="application-7" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 7</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Utilisation de <code>GitLab</code></strong></p>
-</div>
-<div class="callout-content">
-<div>
-<p>Cette application vise à prendre en matin l’interface de <code>GitLab</code>, éventuellement dans le cadre de votre environnement interne de travail.</p>
-<ol type="1">
-<li class="fragment">Dans le cadre d’un <code>GitLab</code> interne, il est plus confortable d’utiliser l’authentification via clé <code>ssh</code> plutôt que l’authentification par <em>token</em>. Si vous n’en avez pas encore, générer une clé <code>ssh</code> et ajouter celle-ci à votre compte <code>GitLab</code>. Se référer pour cela à la <a href="https://docs.gitlab.com/ee/user/ssh.html">documentation GitLab</a> ou, idéalement, à la documentation de cette procédure sur votre environnement interne de travail.</li>
-<li class="fragment">Explorer l’interface de <code>GitLab</code> pour retrouver les différents éléments que nous avons exploités sur l’interface de <code>GitHub</code>.</li>
-<li class="fragment">Créer un projet dans son espace personnel sur <code>GitLab</code> et répéter les opérations des applications 1 et 2.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="application-8-bonus" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Application 8 (bonus)</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Contribution à un projet open-source</strong></p>
-</div>
-<div class="callout-content">
-<div>
-<ol type="1">
-<li class="fragment">Sur <code>GitHub</code>, faire un <code>fork</code> du dépôt <a href="https://github.com/avouacr/git-exo.git"><code>git-exo</code></a></li>
-<li class="fragment">Créer une branche intitulée <code>&lt;votre_nom&gt;-&lt;votre_prénom&gt;</code></li>
-<li class="fragment">Effectuer un <code>commit</code> avec les modifications de votre choix, puis pousser les changements sur votre <code>fork</code></li>
-<li class="fragment">Ouvrir une <code>Pull Request</code> (<code>PR</code>) pour proposer d’intégrer vos changements sur la branche principale du dépôt <a href="https://github.com/avouacr/git-exo.git"><code>git-exo</code></a></li>
-<li class="fragment">Ouvrir une <code>Issue</code> dans laquelle vous mentionnez la <code>Pull Request</code> précédemment ouverte</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<p>❓ <strong>Question</strong> : pourquoi, avec un <code>fork</code>, est-il très important de toujours effectuer une <code>Pull Request</code> à partir d’une branche différente de la branche principale ?</p>
+<!-- ## Application 7 -->
+<!-- {{< include applications_git/_application7.qmd >}} -->
+<!-- ## Application 8 (bonus) -->
+<!-- {{< include applications_git/_application8.qmd >}} -->
 </section>
 <section id="ressources-supplémentaires" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Ressources supplémentaires</h2>
