@@ -83,7 +83,7 @@ Avec des outils pour faciliter la collaboration
 
 ## :four: Partager son code à un public large {auto-animate=true}
 
-Une vitrine pour les projets et l'organisation
+Une vitrine pour les projets et l'organisation : exemple de l'espace de l'Insee sur `GitHub`
 
 ![](img/ghinseefr.png){fig-align="center" height=475}
 
@@ -137,7 +137,7 @@ L'utilisation de `Git` nécessite [__certaines notions préalables__]{.orange}:
 
 :::{.incremental}
 - `Git` est un **logiciel** ;
-- Utilisation en ligne de commandes
+- Pensé initialement pour une utilisation en ligne de commandes
 - Différentes [__interfaces graphiques__]{.blue2} (`RStudio`, `Sublime Merge`, `VS Code`...)
 :::
 
@@ -189,7 +189,9 @@ _Workflow_ (version littéraire) :
 
 #### _Workflow_ complet
 
-![Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)](img/completeworkflow_amend.png){height="400" width="500"} ; commentaires "maison".
+![Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)](img/completeworkflow_amend.png){height="400" width="500"}
+
+_Commentaires "maison"_
 
 ## Commandes essentielles {auto-animate=true}
 
@@ -236,7 +238,6 @@ un bon `.gitignore`)
 
 ## Modes d'authentification
 
-:::{.incremental}
 - [**https**]{.orange}
   - simple à utiliser
   - authentification username + password (ou token) à chaque *push*
@@ -246,10 +247,8 @@ un bon `.gitignore`)
   - (plus) complexe à initialiser
   - authentification automatique 
   - seul type d'authentification possible sous AUS
-  
 Voir les fiches [utilitR](https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git) sur le sujet.
 
-:::
 
 ## Application 0 {.smaller}
 
