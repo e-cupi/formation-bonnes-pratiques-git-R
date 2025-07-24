@@ -3,13 +3,13 @@
 
 :::{.incremental}
 1. Connectez-vous à votre compte [`sur le Gitlab de l'Insee`](https://gitlab.insee.fr/)
-2. Créer un nouveau dépôt dans le sous-groupe `Conjoncture/Formation-Git-bonnes-pratiques-R`. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.
+2. Créer un nouveau dépôt dans le sous-groupe [`Conjoncture/Formation-Git-bonnes-pratiques-R`](https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r). Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.
 3. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre espace `Z`) :
     + `File` → `New project` → `Version Control` → `Git`
 :::
 
 :::
 
-:bulb: Si vous ne vous êtes jamais authentifié auprès du `Gitlab` de l'Insee ou n'avez jamais téléchargé `Git` vous aurez besoin, en amont, de configurer `Git` sur votre poste de travail : pour ce faire, suivre la fiche [utilitR](https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git)
+:bulb: Si vous ne vous êtes jamais authentifié auprès du `Gitlab` de l'Insee ou n'avez jamais téléchargé `Git` vous aurez besoin, en amont, de configurer `Git` sur votre poste de travail : pour ce faire, suivre la fiche [utilitR](https://book.utilitr.org/03_Fiches_thematiques/Fiche_configurer_git.html)
 
 ❓ **Question** : qu'est ce qui différencie le projet cloné d'un projet quelconque ?
