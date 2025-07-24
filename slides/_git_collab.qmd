@@ -24,8 +24,11 @@
 . . .
 
 - Avec un `pull`, `Git` résout le problème via un [***fast-forward merge***]{.blue2}
-    - `Git`crée un commit de _merge_ de l'historique distant dans le local 
+    - `Git` crée un commit de _merge_ de l'historique distant dans le local 
     - _Nota bene_ : rend l'historique non linéaire 
+
+
+
 
 
 ## Divergence d'historiques : cas compliqué
