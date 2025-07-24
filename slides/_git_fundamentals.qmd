@@ -247,7 +247,7 @@ un bon `.gitignore`)
   - (plus) complexe à initialiser
   - authentification automatique 
   - seul type d'authentification possible sous AUS.  
-Voir les fiches [utilitR](https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git) sur le sujet.
+Voir le site [documentaire datascience de l'Insee](https://datascience.gitlab-pages.insee.fr/site-documentaire/accueil/) sur le sujet et les fiches [utilitR](https://book.utilitr.org/03_Fiches_thematiques/Fiche_git_utilisation.html).
 
 
 ## Application 0 {.smaller}
