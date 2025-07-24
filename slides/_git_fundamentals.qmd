@@ -111,8 +111,7 @@ Une vitrine pour les projets et l'organisation : exemple de l'espace de l'Insee 
 L'utilisation de `Git` nécessite [__certaines notions préalables__]{.orange}:
 
 ::: {.incremental}
-- Fonctionnement d'un `filesystem`
-- Connaissance basique du terminal `Linux`
+- Fonctionnement d'un `filesystem` et Connaissance basique du terminal `Linux`
 - Potentiellement, un grand nombre de commandes
 :::
 
