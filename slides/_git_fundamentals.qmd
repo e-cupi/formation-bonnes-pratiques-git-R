@@ -244,8 +244,7 @@ un bon `.gitignore`)
   - ... sauf si on configure Git de façon à garder en mémoire les identifiants
 
 - [**ssh**]{.orange}
-  - (plus) complexe à initialiser
-  - authentification automatique 
+  - (plus) complexe à initialiser mais authentification automatique 
   - seul type d'authentification possible sous AUS.  
 Voir le site [documentaire datascience de l'Insee](https://datascience.gitlab-pages.insee.fr/site-documentaire/accueil/) sur le sujet et les fiches [utilitR](https://book.utilitr.org/03_Fiches_thematiques/Fiche_git_utilisation.html).
 
