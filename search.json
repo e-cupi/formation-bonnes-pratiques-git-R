@@ -193,7 +193,7 @@
     "href": "slides/light.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir le site documentaire datascience de l’Insee sur le sujet et les fiches utilitR."
   },
   {
     "objectID": "slides/light.html#application-0",
@@ -781,7 +781,7 @@
     "href": "slides/complete.html#modes-dauthentification",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Modes d’authentification",
-    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir les fiches utilitR sur le sujet."
+    "text": "Modes d’authentification\n\nhttps\n\nsimple à utiliser\nauthentification username + password (ou token) à chaque push\n… sauf si on configure Git de façon à garder en mémoire les identifiants\n\nssh\n\n(plus) complexe à initialiser\nauthentification automatique\nseul type d’authentification possible sous AUS.\nVoir le site documentaire datascience de l’Insee sur le sujet et les fiches utilitR."
   },
   {
     "objectID": "slides/complete.html#application-0",
