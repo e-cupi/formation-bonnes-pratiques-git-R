@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.42">
+  <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Romain Avouac, Thomas Faria, Lino Galiana, Olivier Meslin, Tom Seimandi">
   <title>Formation aux bonnes pratiques `Git` et `R` – Bonnes pratiques pour les projets statistiques</title>
@@ -31,8 +31,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -43,7 +44,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -96,7 +97,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-8f62eb61b5baf0f2495119921d4031c4.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-7230c0af59ab1606bc2ed49e76979e8e.css">
   <link rel="stylesheet" href="_extensions/InseeFrLab/onyxia/logo.css">
   <link rel="stylesheet" href="custom.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -235,7 +236,6 @@
 <ul>
 <li><span class="blue2"><strong>Origine</strong></span> : communauté des développeurs logiciels</li>
 </ul>
-<div>
 <ul>
 <li class="fragment"><span class="blue2"><strong>Constats</strong></span> :
 <ul>
@@ -243,7 +243,6 @@
 <li class="fragment">la maintenance d’un code est très coûteuse</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li><span class="blue2"><strong>Conséquence</strong></span> : un ensemble de <span class="orange"><strong>règles informelles</strong></span>, conventionnellement acceptées comme produisant des logiciels <span class="orange"><strong>fiables</strong></span>, <span class="orange"><strong>évolutifs</strong></span> et <span class="orange"><strong>maintenables</strong></span></li>
@@ -432,13 +431,11 @@
 <section id="git-est-complexe" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title"><span class="emoji" data-emoji="warning">⚠️</span> Git est complexe</h2>
 <p>L’utilisation de <code>Git</code> nécessite <span class="orange"><strong>certaines notions préalables</strong></span>:</p>
-<div>
 <ul>
 <li class="fragment">Fonctionnement d’un <code>filesystem</code></li>
 <li class="fragment">Connaissance basique du terminal <code>Linux</code></li>
 <li class="fragment">Potentiellement, un grand nombre de commandes</li>
 </ul>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/gitfire.png" height="400"></p>
@@ -449,7 +446,6 @@
 <section id="git-est-complexe-1" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title"><span class="emoji" data-emoji="warning">⚠️</span> Git est complexe</h2>
 <p><span class="blue2"><strong>Mais</strong></span></p>
-<div>
 <ul>
 <li class="fragment">L’<strong>usage quotidien</strong> n’implique que <span class="orange"><strong>quelques commandes</strong></span></li>
 <li class="fragment">Lors de chaque action, Git renvoie un <span class="orange"><strong>message</strong></span> qui indique s’il y a eu problème (il faut lire les messages de Git!)</li>
@@ -457,29 +453,24 @@
 <li class="fragment">Des <span class="orange"><strong>interfaces visuelles</strong></span> (ex: <code>RStudio</code>, <code>Sublime Merge</code>, <code>VS Code</code>) qui facilitent l’apprentissage</li>
 <li class="fragment">Un petit investissement individuel pour de <span class="orange"><strong>gros gains collectifs</strong></span></li>
 </ul>
-</div>
 </section>
 <section id="concepts" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Concepts</h2>
 <h4 data-background-image="background.svg" data-background-size="contain" id="git-github-gitlab-quelles-différences"><code>Git</code>, <code>GitHub</code>, <code>GitLab</code>… quelles différences ?</h4>
-<div>
 <ul>
 <li class="fragment"><code>Git</code> est un <strong>logiciel</strong> ;</li>
 <li class="fragment">Pensé initialement pour une utilisation en ligne de commandes</li>
 <li class="fragment">Différentes <span class="blue2"><strong>interfaces graphiques</strong></span> (<code>RStudio</code>, <code>Sublime Merge</code>, <code>VS Code</code>…)</li>
 </ul>
-</div>
 </section>
 <section id="concepts-1" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Concepts</h2>
 <h4 data-background-image="background.svg" data-background-size="contain" id="git-github-gitlab-quelles-différences-1"><code>Git</code>, <code>GitHub</code>, <code>GitLab</code>… quelles différences ?</h4>
-<div>
 <ul>
 <li class="fragment"><code>GitHub</code> et <code>GitLab</code> sont des <strong>forges logicielles</strong></li>
 <li class="fragment"><em>Forge</em>: espace d’archivage de code</li>
 <li class="fragment">Des fonctionalités supplémentaires : <strong>réseau social du code</strong></li>
 </ul>
-</div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -637,8 +628,7 @@ _Workflow_ (version littéraire) :
 </ul></li>
 <li><span class="orange"><strong>ssh</strong></span>
 <ul>
-<li>(plus) complexe à initialiser</li>
-<li>authentification automatique</li>
+<li>(plus) complexe à initialiser mais authentification automatique</li>
 <li>seul type d’authentification possible sous AUS.<br>
 Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentaire/accueil/">documentaire datascience de l’Insee</a> sur le sujet et les fiches <a href="https://book.utilitr.org/03_Fiches_thematiques/Fiche_git_utilisation.html">utilitR</a>.</li>
 </ul></li>
@@ -652,10 +642,9 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Préparation de l’environnement de travail</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Connectez-vous à votre compte <a href="https://gitlab.insee.fr/"><code>sur le Gitlab de l'Insee</code></a></li>
-<li class="fragment">Créer un nouveau dépôt dans le sous-groupe <code>Conjoncture/Formation-Git-bonnes-pratiques-R</code>. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.</li>
+<li class="fragment">Créer un nouveau dépôt dans le sous-groupe <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r"><code>Conjoncture/Formation-Git-bonnes-pratiques-R</code></a>. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.</li>
 <li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre espace <code>Z</code>) :
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
@@ -664,8 +653,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
-<p><span class="emoji" data-emoji="bulb">💡</span> Si vous ne vous êtes jamais authentifié auprès du <code>Gitlab</code> de l’Insee ou n’avez jamais téléchargé <code>Git</code> vous aurez besoin, en amont, de configurer <code>Git</code> sur votre poste de travail : pour ce faire, suivre la fiche <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_configurer_git">utilitR</a></p>
+<p><span class="emoji" data-emoji="bulb">💡</span> Si vous ne vous êtes jamais authentifié auprès du <code>Gitlab</code> de l’Insee ou n’avez jamais téléchargé <code>Git</code> vous aurez besoin, en amont, de configurer <code>Git</code> sur votre poste de travail : pour ce faire, suivre la fiche <a href="https://book.utilitr.org/03_Fiches_thematiques/Fiche_configurer_git.html">utilitR</a></p>
 <p>❓ <strong>Question</strong> : qu’est ce qui différencie le projet cloné d’un projet quelconque ?</p>
 </section>
 <section id="application-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
@@ -676,7 +664,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Premiers commits</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Créer un dossier 📁 <code>scripts</code></li>
 <li class="fragment">Y créer les fichiers <code>script1.R</code> et <code>script2.R</code>, chacun contenant quelques commandes <code>R</code> de votre choix</li>
@@ -690,7 +677,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 <p>❓ <strong>Question</strong> : à ce stade, le dépôt du projet sur <code>GitHub</code> (<code>remote</code>) a-t-il été modifié ?</p>
 </section>
 <section id="application-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -701,7 +687,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Interactions avec le dépôt distant</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Effectuer un <code>push</code> pour intégrer les changements locaux au projet distant</li>
 <li class="fragment">Parcourir l’historique du projet sur <code>GitLab</code>
@@ -713,18 +698,15 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 </section>
 <section id="bonnes-pratiques" class="slide level2 smaller" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Bonnes pratiques</h2>
 <p><strong>Que versionne-t-on ?</strong></p>
-<div>
 <ul>
 <li class="fragment">Essentiellement du <span class="orange"><strong>code source</strong></span></li>
 <li class="fragment"><span class="orange"><strong>Pas d’outputs</strong></span> (fichiers <code>.html</code>, <code>.pdf</code>, modèles…)</li>
 <li class="fragment"><span class="orange"><strong>Pas de données</strong></span>, d’informations locales ou sensibles</li>
 </ul>
-</div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -745,9 +727,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <section id="bonnes-pratiques-1" class="slide level2 smaller" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title">Bonnes pratiques</h2>
 <p><strong>Format des commits</strong></p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[40,60]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
@@ -778,7 +757,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Le fichier <code>.gitignore</code></strong></p>
 </div>
 <div class="callout-content">
-<div>
 <p>Au moment du clonage du dépôt, le fichier <code>.gitignore</code>, est apparu à la racine du projet. Il spécifie l’ensemble des fichiers qui seront toujours exclus de <em>l’indexation</em> faite par <code>Git</code>.</p>
 <ol type="1">
 <li class="fragment">Exclure les fichiers de type <code>*.pdf</code> et <code>*.html</code></li>
@@ -786,7 +764,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Ajouter au <code>.gitignore</code> le dossier <code>data/</code></li>
 <li class="fragment">Vérifier que toutes les règles ajoutées précédemment fonctionnent comme attendu</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -825,7 +802,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Synchronisation des dépôts</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Se mettre par <span class="orange"><strong>groupes de 3/4 personnes</strong></span>:
 <ul>
@@ -840,7 +816,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 </section>
 <section id="divergence-dhistoriques-cas-simple" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Divergence d’historiques : cas simple</h2>
@@ -849,7 +824,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ul>
 <li>Avec un <code>pull</code>, <code>Git</code> résout le problème via un <span class="blue2"><strong><em>fast-forward merge</em></strong></span>
 <ul>
-<li><code>Git</code>crée un commit de <em>merge</em> de l’historique distant dans le local</li>
+<li><code>Git</code> crée un commit de <em>merge</em> de l’historique distant dans le local</li>
 <li><em>Nota bene</em> : rend l’historique non linéaire</li>
 </ul></li>
 </ul>
@@ -888,7 +863,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Résoudre les conflits</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">On se place dans la même configuration que dans l’application précédente : un <span class="blue2"><strong>mainteneur</strong></span> et deux/trois <span class="blue2"><strong>développeurs</strong></span></li>
 <li class="fragment">Le mainteneur modifie le contenu de son fichier, puis <code>commit</code> et <code>push</code> les modifications</li>
@@ -897,7 +871,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Utiliser l’interface de <code>RStudio</code> pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis <code>commit</code>/<code>push</code> les modifications</li>
 <li class="fragment">Comme dans l’application précédente, seul le développeur le plus rapide parvient à <code>push</code>. Les autres doivent répéter l’opération.</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -946,7 +919,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Branches, <em>issues</em> et <em>merge requests</em></strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Sur <code>GitLab</code>, chaque personne ouvre une <code>Issue</code> sur le même dépôt que les applications précédentes, dans laquelle vous suggérez une modification à apporter à votre projet</li>
 <li class="fragment">Via <code>Rstudio</code>, créer une branche dont le nom indique la modification que vous allez apporter. <span class="emoji" data-emoji="arrow_right">➡️</span> utiliser l’icône violette dans l’onglet <code>Git</code>, sur la droite. <span class="emoji" data-emoji="warning">⚠️</span> : être attentif à la branche <em>depuis laquelle</em> vous créez votre nouvelle branche.</li>
@@ -954,7 +926,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Ouvrir une <code>Merge Request</code> (<code>MR</code>) pour proposer d’intégrer vos changements sur la branche principale du dépôt distant.</li>
 <li class="fragment">Chaque personne effectue finalement une <em>review</em> d’une <code>MR</code> d’un autre membre de l’équipe, suite à quoi les différentes <code>MR</code> peuvent être fusionnées</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1018,7 +989,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Préparation de l’environnement de travail</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Créer un nouveau dépôt public sur <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r">GitLab, dans le groupe de la formation</a></li>
 <li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre <code>Z</code>):
@@ -1030,7 +1000,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Ajouter la règle “individu_reg.*” au fichier <code>.gitignore</code>. Que signifie-t-elle ?</li>
 <li class="fragment"><em>Commit</em>/<em>push</em> les changements</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1363,7 +1332,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Partie 2 : premiers standards de qualité</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Installer les <em>packages</em> <code>R</code> <a href="https://github.com/r-lib/lintr"><code>lintr</code></a> et <a href="https://github.com/r-lib/styler"><code>styler</code></a>.</li>
 <li class="fragment">Définir le <em>linter</em> à utiliser comme étant de type <code>tidyverse</code> : <code>lintr::use_lintr(type = "tidyverse")</code></li>
@@ -1378,7 +1346,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 </section>
 <section id="application-1-3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 1</h2>
@@ -1388,13 +1355,11 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Partie 3 : une meilleure gestion des <em>packages</em> utilisés</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Limiter les ambiguités sur les <em>packages</em> en utilisant la syntaxe <code>package::fonction</code> pour les <em>packages</em> rarement utilisés dans le script.</li>
 <li class="fragment">L’installation des <em>packages</em> dans un script n’est pas une bonne pratique. Supprimer les instructions correspondantes.</li>
 <li class="fragment">Importer le <code>tidyverse</code> au complet est rarement utile. N’importer à la place que les <em>packages</em> effectivement utilisés dans le script.</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1407,7 +1372,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Partie 4 : (auto-)documentation du code</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Déplacer les <code>library</code> pour les mettre tous ensemble au début du script.</li>
 <li class="fragment">Le script n’est pas construit dans un ordre logique. Déplacer les parties pour adopter une structure plus logique :
@@ -1419,7 +1383,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment"><code># TITRE NIVEAU 1 ------------</code> et <code>## TITRE NIVEAU 2 ==========</code></li>
 </ul></li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1445,9 +1408,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="checkpoint" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[30,70]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
@@ -1463,7 +1423,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="bilan" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Bilan</h2>
-<div>
 <ul>
 <li class="fragment">Un code mal structuré
 <ul>
@@ -1471,11 +1430,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Est très coûteux à maintenir (dette technique)</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[80,30]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 72.7%;justify-content: center;">
@@ -1542,7 +1497,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="utiliser-les-projets-rstudio" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="one">1️⃣</span> Utiliser les projets RStudio</h2>
-<div>
 <ul>
 <li class="fragment"><span class="orange"><strong>Objectif</strong></span> : favoriser la <span class="blue2"><strong>reproductibilité</strong></span>
 <ul>
@@ -1551,7 +1505,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Utilisation de <span class="blue2"><strong>chemins relatifs</strong></span> plutôt qu’absolus.</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li><strong>Bonus</strong> : en utilisant <code>Git</code>, on s’assure de toujours travailler dans un projet RStudio !</li>
@@ -1606,7 +1559,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ul>
 <li>Le fichier <code>README.md</code>, situé à la racine du projet, est à la fois la <strong>carte d’identité</strong> et la <strong>vitrine du projet</strong></li>
 </ul>
-<div>
 <ul>
 <li class="fragment">Idéalement, il contient :
 <ul>
@@ -1615,7 +1567,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Un guide de <span class="orange"><strong>contribution</strong></span> (<em>open-source</em>)</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li>Quelques modèles de <code>README.md</code> complets :
@@ -1673,7 +1624,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="expérience-de-pensée" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Expérience de pensée</h2>
-<div>
 <ul>
 <li class="fragment"><p>Imaginons la situation suivante :</p>
 <ul>
@@ -1684,7 +1634,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment"><p>Quels <span class="orange"><strong>problèmes</strong></span> puis-je rencontrer au fil des projets ?</p></li>
 <li class="fragment"><p>Est-il facile de <span class="orange"><strong>partager</strong></span> un de mes projets ?</p></li>
 </ul>
-</div>
 </section>
 <section id="enjeux-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Enjeux</h2>
@@ -1751,7 +1700,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="initialisation-de-lenvironnement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="one">1️⃣</span> Initialisation de l’environnement</h2>
-<div>
 <ul>
 <li class="fragment"><code>renv::init()</code> dans un projet RStudio crée :
 <ul>
@@ -1759,7 +1707,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Le fichier <code>renv.lock</code> : versions des <em>packages</em> installés</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1770,7 +1717,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="développement-du-projet" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="two">2️⃣</span> Développement du projet</h2>
-<div>
 <ul>
 <li class="fragment">Une fois l’environnement initialisé, on développe le projet de manière habituelle :
 <ul>
@@ -1778,7 +1724,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Ecriture de scripts</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li><code>renv::status()</code> : indique les <em>packages</em> installés/supprimés par rapport au fichier <code>renv.lock</code></li>
@@ -1818,7 +1763,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Partie 1 : prise en main de la librairie <code>renv</code></strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol start="0" type="1">
 <li class="fragment"><p>Installer le package <a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code></a></p></li>
 <li class="fragment"><p>Taper dans la console <code>renv::init()</code>, <strong>lire le message</strong> et accepter.</p></li>
@@ -1843,7 +1787,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb5-16"><a></a>    <span class="st">`</span><span class="at">n()</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Population"</span></span>
 <span id="cb5-17"><a></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -1884,7 +1827,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="vers-une-reproductibilité-optimale" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Vers une reproductibilité optimale</h2>
-<div>
 <ul>
 <li class="fragment"><span class="orange"><strong>Limites</strong></span> des environnements virtuels :
 <ul>
@@ -1893,7 +1835,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Peu adaptés à un environnement de production</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li>La <span class="orange"><strong>conteneurisation</strong></span> (ex : <code>Docker</code>) apporte la solution</li>
@@ -1931,20 +1872,17 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ul>
 <li>Modéliser ces étapes sous forme de <span class="orange"><strong>pipeline (<em>direct acyclic graph</em>)</strong></span> a plusieurs avantages :</li>
 </ul>
-<div>
 <ul>
 <li class="fragment"><span class="blue2"><strong>Découplage</strong></span> des différentes étapes</li>
 <li class="fragment">Facilite la <span class="blue2"><strong>planification</strong></span> du traitement</li>
 <li class="fragment">Facilite la <span class="blue2"><strong>prise en main</strong></span> du projet par un tiers</li>
 </ul>
-</div>
 </section>
 <section id="le-package-targets" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Le package <code>targets</code></h2>
 <ul>
 <li><code>targets</code> est un <em>framework</em> de modélisation de <em>pipelines</em> spécifiquement dédié aux projets <code>R</code>.</li>
 </ul>
-<div>
 <ul>
 <li class="fragment">Deux objectifs majeurs :
 <ol type="1">
@@ -1952,7 +1890,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Garantir la <span class="orange"><strong>reproductibilité</strong></span> de la chaîne en traçant les changements de ces <strong><em>targets</em></strong></li>
 </ol></li>
 </ul>
-</div>
 </section>
 <section id="méthode-de-travail-avec-targets" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Méthode de travail avec <code>targets</code></h2>
@@ -2015,7 +1952,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="le-fichier-_targets.r" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2><span class="emoji" data-emoji="two">2️⃣</span> Le fichier <code>_targets.R</code></h2>
-<div>
 <ul>
 <li class="fragment">Le fichier <code>_targets.R</code> doit satisfaire plusieurs conditions :
 <ol type="1">
@@ -2025,7 +1961,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Définir le <em>pipeline</em>.</li>
 </ol></li>
 </ul>
-</div>
 <div class="fragment">
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># _targets.R file</span></span>
 <span id="cb7-2"><a></a><span class="fu">library</span>(targets)</span>
@@ -2097,7 +2032,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Modélisation d’un projet sous forme de <em>pipeline</em> de données</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol start="0" type="1">
 <li class="fragment">Installer le package <code>targets</code>.</li>
 <li class="fragment">Créer un fichier <code>_targets.R</code> à la racine du dépôt, à partir de <a href="https://books.ropensci.org/targets/walkthrough.html#target-script-file">l’exemple</a> dans la documentation.</li>
@@ -2122,7 +2056,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 </section>
 <section id="application-5-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 5</h2>
@@ -2132,7 +2065,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Modélisation d’un projet sous forme de <em>pipeline</em> de données (suite)</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol start="6" type="1">
 <li class="fragment">En extrayant du contenu de <code>script.R</code>, créer les deux premières cibles (<em>targets</em>) dans <code>_targets.R</code>:
 <ul>
@@ -2147,7 +2079,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Visualiser les relations entre objets de notre <em>pipeline</em> en utilisant dans la console <code>R</code> la fonction <code>tar_visnetwork()</code>.</li>
 <li class="fragment">Exécuter <code>tar_make()</code> dans la console et observer le changement d’état avec <code>tar_visnetwork()</code>.</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -2214,9 +2145,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="checkpoint-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[30,70]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
@@ -2259,7 +2187,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="r-markdown" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2><code>R Markdown</code></h2>
-<div>
 <ul>
 <li class="fragment"><code>R Markdown</code> est un <em>package</em> <code>R</code> qui permet de lier
 <ul>
@@ -2267,12 +2194,10 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Du <span class="orange"><strong>code</strong></span> <code>R</code> qui peut être exécuté et dont les sorties peuvent être intégrées au texte</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li><span class="orange"><strong>Dissociation du fond et de la forme</strong></span> du document</li>
 </ul>
-<div>
 <ul>
 <li class="fragment">Un document est <span class="orange"><strong>compilé</strong></span> en deux étapes
 <ul>
@@ -2280,7 +2205,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment"><span class="green2"><strong><em>convert</em></strong></span> : le logiciel <code>pandoc</code> transforme le document <code>.md</code> en un format de sortie standard (<code>html</code>, <code>pdf</code>, etc.)</li>
 </ul></li>
 </ul>
-</div>
 </div>
 </section>
 <section id="quarto" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -2323,7 +2247,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Introduction à la publication reproductible</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol type="1">
 <li class="fragment">Cliquer sur <code>File &gt; New file &gt; Quarto document</code>:
 <ul>
@@ -2336,7 +2259,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 </div>
 </div>
-</div>
 </section>
 <section id="application-6-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 6</h2>
@@ -2346,7 +2268,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <p><strong>Introduction à la publication reproductible (suite)</strong></p>
 </div>
 <div class="callout-content">
-<div>
 <ol start="4" type="1">
 <li class="fragment">Produire une courte note présentant le tableau des âges produit précédemment :
 <ul>
@@ -2356,7 +2277,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </ul></li>
 <li class="fragment">Générer le rapport avec le bouton <code>Render</code> et vérifier que l’<em>output</em> correspond à celui attendu.</li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -2417,9 +2337,6 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </section>
 <section id="checkpoint-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Checkpoint</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout="[30,70]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
@@ -2692,190 +2609,172 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copié");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copié");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/e-cupi\.github\.io\/formation-bonnes-pratiques-git-R\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copié");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copié");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/e-cupi\.github\.io\/formation-bonnes-pratiques-git-R\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
