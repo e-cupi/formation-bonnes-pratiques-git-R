@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Romain Avouac, Thomas Faria, Lino Galiana, Olivier Meslin, Tom Seimandi">
   <title>Formation aux bonnes pratiques `Git` et `R` – Bonnes pratiques pour les projets statistiques</title>
@@ -97,7 +97,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-7230c0af59ab1606bc2ed49e76979e8e.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ea8535d309a38c52e88d69daf30b07d0.css">
   <link rel="stylesheet" href="_extensions/InseeFrLab/onyxia/logo.css">
   <link rel="stylesheet" href="custom.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -324,7 +324,7 @@
 <section id="archiver-son-code-proprement-1" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title"><span class="emoji" data-emoji="one">1️⃣</span> Archiver son code proprement</h2>
 <p>ou encore ça :</p>
-<div class="sourceCode" id="cb1" data-code-line-numbers="12-18"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb1-1" class="hljs-ln-code"><a></a>prior <span class="op">&lt;-</span> read_csv(prior_path)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="12-18"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb1-1" class="hljs-ln-code"><a></a>prior <span class="op">&lt;-</span> read_csv(prior_path)</span>
 <span id="cb1-2" class="hljs-ln-code"><a></a>prior <span class="op">&lt;-</span> prior <span class="op">%&gt;%</span></span>
 <span id="cb1-3" class="hljs-ln-code"><a></a>    select(<span class="bu">id</span>, proba_inter, proba_build, proba_rfl) <span class="op">%&gt;%</span></span>
 <span id="cb1-4" class="hljs-ln-code"><a></a>    separate(<span class="bu">id</span>, into <span class="op">=</span> c(<span class="st">'nidt'</span>, <span class="st">'grid_id'</span>), sep <span class="op">=</span> <span class="st">":"</span>) <span class="op">%&gt;%</span></span>
@@ -343,7 +343,7 @@
 <span id="cb1-17" class="hljs-ln-code"><a></a><span class="co">#        proba_rfl = round(proba_rfl, 4)</span></span>
 <span id="cb1-18" class="hljs-ln-code"><a></a><span class="co">#    )</span></span>
 <span id="cb1-19" class="hljs-ln-code"><a></a></span>
-<span id="cb1-20" class="hljs-ln-code"><a></a>write_csv(prior_round, <span class="st">"~/prior.csv"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-20" class="hljs-ln-code"><a></a>write_csv(prior_round, <span class="st">"~/prior.csv"</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="archiver-son-code-proprement-2" class="slide level2" data-auto-animate="true" data-background-image="background.svg" data-background-size="contain">
 <h2 data-id="quarto-animate-title"><span class="emoji" data-emoji="one">1️⃣</span> Archiver son code proprement</h2>
@@ -643,7 +643,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <div class="callout-content">
 <ol type="1">
 <li class="fragment">Connectez-vous à votre compte <a href="https://gitlab.insee.fr/"><code>sur le Gitlab de l'Insee</code></a></li>
-<li class="fragment">Créer un nouveau dépôt dans le sous-groupe <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r"><code>Conjoncture/Formation-Git-bonnes-pratiques-R</code></a>. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.</li>
+<li class="fragment">Créer un nouveau dépôt dans le groupe <a href="https://gitlab.insee.fr/formation_git_conj/exos-individuels"><code>formation-git-conj/exos-individuels/</code></a>. Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.</li>
 <li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre espace <code>Z</code>) :
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
@@ -989,7 +989,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 <div class="callout-content">
 <ol type="1">
-<li class="fragment">Créer un nouveau dépôt public sur <a href="https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r">GitLab, dans le groupe de la formation</a></li>
+<li class="fragment">Créer un nouveau dépôt public sur <a href="https://gitlab.insee.fr/formation_git_conj/exos-individuels">GitLab, dans le groupe de la formation, sous-groupe “exos-individuels”</a></li>
 <li class="fragment">Cloner le dépôt distant sur votre environnement local (ici, le <code>RStudio</code> de votre <code>Z</code>):
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
@@ -1768,7 +1768,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment"><p>Observer les nouveaux élements qui sont apparus dans le projet.</p></li>
 <li class="fragment"><p>Installer le <a href="https://gt.rstudio.com/">package <code>gt</code></a> et observer le message dans la console.</p></li>
 <li class="fragment"><p>Dans la partie sur les statistiques descriptives d’âge, ajouter ce code :</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>stats_age <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>stats_age <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb5-2"><a></a>  <span class="fu">group_by</span>(<span class="at">decennie =</span> <span class="fu">decennie_a_partir_annee</span>(age)) <span class="sc">%&gt;%</span></span>
 <span id="cb5-3"><a></a>  <span class="fu">summarise</span>(<span class="fu">n</span>())</span>
 <span id="cb5-4"><a></a></span>
@@ -1784,7 +1784,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb5-14"><a></a>  gt<span class="sc">::</span><span class="fu">cols_label</span>(</span>
 <span id="cb5-15"><a></a>    <span class="at">decennie =</span> <span class="st">"Tranche d'âge"</span>,</span>
 <span id="cb5-16"><a></a>    <span class="st">`</span><span class="at">n()</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Population"</span></span>
-<span id="cb5-17"><a></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb5-17"><a></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 </div>
 </div>
@@ -1961,7 +1961,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </ol></li>
 </ul>
 <div class="fragment">
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># _targets.R file</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># _targets.R file</span></span>
 <span id="cb7-2"><a></a><span class="fu">library</span>(targets)</span>
 <span id="cb7-3"><a></a><span class="fu">source</span>(<span class="st">"R/functions.R"</span>)</span>
 <span id="cb7-4"><a></a><span class="fu">tar_option_set</span>(<span class="at">packages =</span> <span class="fu">c</span>(<span class="st">"readr"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>))</span>
@@ -1970,7 +1970,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb7-7"><a></a>  <span class="fu">tar_target</span>(data, <span class="fu">get_data</span>(file)),</span>
 <span id="cb7-8"><a></a>  <span class="fu">tar_target</span>(model, <span class="fu">fit_model</span>(data)),</span>
 <span id="cb7-9"><a></a>  <span class="fu">tar_target</span>(plot, <span class="fu">plot_model</span>(model, data))</span>
-<span id="cb7-10"><a></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-10"><a></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -2038,7 +2038,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <li class="fragment">Reporter les <code>library</code> dans le fichier <code>R/functions.R</code> et récupérer les noms des packages pour les mettre dans la section <code>tar_option_set()</code>.</li>
 <li class="fragment">Ajouter dans <code>R/functions.R</code> les fonctions <code>read_yaml_secret</code> et <code>read_from_parquet</code>:</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>read_yaml_secret <span class="ot">&lt;-</span> <span class="cf">function</span>(path, key) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>read_yaml_secret <span class="ot">&lt;-</span> <span class="cf">function</span>(path, key) {</span>
 <span id="cb8-2"><a></a>  <span class="fu">return</span>(yaml<span class="sc">::</span><span class="fu">read_yaml</span>(path)[[key]])</span>
 <span id="cb8-3"><a></a>}</span>
 <span id="cb8-4"><a></a>read_from_parquet <span class="ot">&lt;-</span> <span class="cf">function</span>(path) {</span>
@@ -2051,7 +2051,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb8-11"><a></a>    )</span>
 <span id="cb8-12"><a></a>  )</span>
 <span id="cb8-13"><a></a>  <span class="fu">return</span>(df)</span>
-<span id="cb8-14"><a></a>}</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-14"><a></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -2093,7 +2093,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ol start="9" type="1">
 <li>A partir des fonctions suivantes, créer deux nouvelles cibles (<code>clean_data</code> et <code>table_age</code>) qui automatisent la production du tableau <code>gt</code></li>
 </ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>retraitement_donnees <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>retraitement_donnees <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
 <span id="cb9-2"><a></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb9-3"><a></a>    <span class="fu">mutate</span>(<span class="at">aged =</span> <span class="fu">as.numeric</span>(aged))</span>
 <span id="cb9-4"><a></a>  df<span class="sc">$</span>sexe <span class="ot">&lt;-</span> df<span class="sc">$</span>sexe <span class="sc">%&gt;%</span></span>
@@ -2122,17 +2122,17 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb9-27"><a></a>      <span class="st">`</span><span class="at">n()</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Population"</span></span>
 <span id="cb9-28"><a></a>    )</span>
 <span id="cb9-29"><a></a>  <span class="fu">return</span>(table_age)</span>
-<span id="cb9-30"><a></a>}</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-30"><a></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="10" type="1">
 <li>En console, visualiser l’état du <em>pipeline</em> avec <code>tar_visnetwork</code> puis exécuter <code>tar_make()</code>. Analyser la sortie dans la console.</li>
 <li>A l’aide de la fonction <code>tar_read(table_age)</code>, visualiser la table des âges produite.</li>
 <li>Ajouter les commandes suivantes au sein de la fonction <code>retraitement_donnees</code> pour la modifier:</li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb10-2"><a></a>  <span class="fu">mutate</span>(</span>
 <span id="cb10-3"><a></a>    <span class="at">surf =</span> <span class="fu">factor</span>(surf, <span class="at">ordered =</span> <span class="cn">TRUE</span>),</span>
 <span id="cb10-4"><a></a>    <span class="at">cs1 =</span> <span class="fu">factor</span>(cs1)</span>
-<span id="cb10-5"><a></a>  )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-5"><a></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="13" type="1">
 <li>Depuis la console, inspecter le _pipeline avec <code>tar_visnetwork</code> puis exécuter <code>tar_make()</code> pour lancer le <em>pipeline</em>. Analyser la sortie.</li>
 <li>Si vous avez le temps, continuer à enrichir votre <em>pipeline</em></li>
@@ -2310,7 +2310,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </ul></li>
 <li>A partir de la fonction suivante à mettre dans <code>R/functions.R</code>, créer une nouvelle <em>target</em> <code>graph_part_hommes</code> dans <code>_targets.R</code>.</li>
 </ol>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>figure_part_homme_age <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>figure_part_homme_age <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
 <span id="cb11-2"><a></a>  p <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb11-3"><a></a>    <span class="fu">group_by</span>(aged, sexe) <span class="sc">%&gt;%</span></span>
 <span id="cb11-4"><a></a>    <span class="fu">summarise</span>(<span class="at">SH_sexe =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
@@ -2324,7 +2324,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <span id="cb11-12"><a></a>      <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
 <span id="cb11-13"><a></a>    <span class="fu">coord_cartesian</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>))</span>
 <span id="cb11-14"><a></a>  <span class="fu">return</span>(p)</span>
-<span id="cb11-15"><a></a>}</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-15"><a></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="8" type="1">
 <li>Faire tourner le <em>pipeline</em> (<code>tar_make</code>)</li>
 <li>Pour être certain que votre note utilise la dernière version du <em>pipeline</em>, introduire un <code>tar_make()</code> dans votre document à la suite du <code>library(targets)</code></li>
@@ -2581,7 +2581,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -2655,13 +2655,14 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
