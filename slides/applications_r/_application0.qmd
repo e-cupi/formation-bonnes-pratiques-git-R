@@ -4,7 +4,7 @@
 ## Préparation de l'environnement de travail
 
 :::{.incremental}
-1. Créer un nouveau dépôt public sur [GitLab, dans le groupe de la formation](https://gitlab.insee.fr/conjoncture/formation-git-bonnes-pratiques-r)
+1. Créer un nouveau dépôt public sur [GitLab, dans le groupe de la formation, sous-groupe "exos-individuels"](https://gitlab.insee.fr/formation_git_conj/exos-individuels)
 2. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre `Z`):
     + `File` → `New project` → `Version Control` → `Git`
 3. Créer un script `get_data.R` en copiant le contenu de [ce fichier](https://raw.githubusercontent.com/e-cupi/formation-bonnes-pratiques-git-R/main/R/get_data.R), puis l'exécuter
