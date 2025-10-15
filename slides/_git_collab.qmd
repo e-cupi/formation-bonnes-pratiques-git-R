@@ -59,7 +59,7 @@
 ![](img/conflict_sublime_merge.png){ width=100% }
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size:12px;"}
 - `OURS` (à gauche) = `MAIN` ou ce qui est sur le repo  
 - `THEIRS` (à droite) = `BRANCHE` ou ce qui est en local  
 - Au milieu la version qui sera gitée avec les conflits à arbitrer  
