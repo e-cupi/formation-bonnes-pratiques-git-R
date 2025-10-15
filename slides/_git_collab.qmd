@@ -59,11 +59,11 @@
 ![](img/conflict_sublime_merge.png){ width=100% }
 :::
 
-::: {.column width="50%" style="font-size:12px;"}
-- `OURS` (à gauche) = `MAIN` ou ce qui est sur le repo  
-- `THEIRS` (à droite) = `BRANCHE` ou ce qui est en local  
+::: {.column width="50%" style="font-size:16px;"}
+- `OURS` (à gauche) = `MAIN` ou ce qui est sur le local 
+- `THEIRS` (à droite) = `ORIGIN MAIN` ou ce qui est sur le repo distant  
 - Au milieu la version qui sera gitée avec les conflits à arbitrer  
-- Choisir la flèche de gauche pour conserver `OURS` / celle de droite pour `THEIRS`  
+- Choisir la flèche de gauche pour conserver local `OURS` / celle de droite pour le distant `THEIRS`  
 - `Commit` et `push` les changements
 :::
 
