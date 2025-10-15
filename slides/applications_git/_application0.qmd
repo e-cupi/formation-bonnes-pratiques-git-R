@@ -6,6 +6,7 @@
 2. Créer un nouveau dépôt dans le groupe [`formation-git-conj/exos-individuels/`](https://gitlab.insee.fr/formation_git_conj/exos-individuels). Exceptionnellement, vous pouvez utiliser votre prénom pour nommer votre dépôt.
 3. Cloner le dépôt distant sur votre environnement local (ici, le `RStudio` de votre espace `Z`) :
     + `File` → `New project` → `Version Control` → `Git`
+4. Ouvrir `Sublime Merge`. Dans File/Open Repository, charger le Rproj.
 :::
 
 :::

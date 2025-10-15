@@ -51,7 +51,14 @@
 - Supprimer les "marquages" du conflit  
 - `Commit` et `push` les changements  
 
+## Résoudre les conflits : l'interfacte Sublime Merge
 
+![](img/conflict_sublime_merge.png)
+- `OURS` (à gauche) = `MAIN` ou ce qui est sur le repo 
+- `THEIRS` (à droite) = `BRANCHE` ou ce qui est en local 
+- Au milieu la version qui sera gitée avec les conflits à arbitrer
+- Chosir la flèche de gauche pour conserver OURS / celle de droite pour conserver THEIRS
+- `Commit` et `push` les changements  
 
 ## Application 5 {.smaller}
 
