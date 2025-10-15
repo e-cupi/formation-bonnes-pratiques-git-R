@@ -648,6 +648,7 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ul>
 <li class="fragment"><code>File</code> → <code>New project</code> → <code>Version Control</code> → <code>Git</code></li>
 </ul></li>
+<li class="fragment">Ouvrir <code>Sublime Merge</code>. Dans File/Open Repository, charger le Rproj.</li>
 </ol>
 </div>
 </div>
@@ -666,12 +667,12 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 <ol type="1">
 <li class="fragment">Créer un dossier 📁 <code>scripts</code></li>
 <li class="fragment">Y créer les fichiers <code>script1.R</code> et <code>script2.R</code>, chacun contenant quelques commandes <code>R</code> de votre choix</li>
-<li class="fragment">Ajouter ces fichiers à la zone de <em>staging</em> de Git en les cochant dans l’interface <code>RStudio</code></li>
+<li class="fragment">Ajouter ces fichiers à la zone de <em>staging</em> de Git en les cochant dans l’interface <code>Sublime Merge</code> avec le bouton <code>Stage</code>.</li>
 <li class="fragment">Effectuer un <code>commit</code>, auquel on donnera un message descriptif pertinent</li>
 <li class="fragment">Supprimer le fichier <code>script1.R</code> et modifier le contenu du fichier <code>script2.R</code></li>
-<li class="fragment">Analyser ce qui se passe lorsque l’on coche ces fichiers dans l’interface <code>RStudio</code></li>
+<li class="fragment">Analyser ce qui se passe lorsque l’on coche ces fichiers dans l’interface <code>Sublime Merge</code></li>
 <li class="fragment">Effectuer un nouveau <em>commit</em> pour ajouter ces modifications à l’historique</li>
-<li class="fragment">Visualiser l’historique du projet à partir de l’interface graphique de <code>RStudio</code></li>
+<li class="fragment">Visualiser l’historique du projet à partir de l’interface graphique de <code>Sublime Merge</code></li>
 </ol>
 </div>
 </div>
@@ -802,10 +803,10 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 <div class="callout-content">
 <ol type="1">
-<li class="fragment">Se mettre par <span class="orange"><strong>groupes de 3/4 personnes</strong></span>:
+<li class="fragment">Se mettre par <span class="orange"><strong>groupes de 3 personnes</strong></span>:
 <ul>
-<li class="fragment">Une personne aura la responsabilité d’être <span class="blue2"><strong>mainteneur</strong></span></li>
-<li class="fragment">Deux à trois personnes seront <span class="blue2"><strong>développeurs</strong></span></li>
+<li class="fragment">Une personne aura la responsabilité d’être <span class="blue2"><strong>mainteneur</strong></span>. Me prévenir pour que je lui donne les droits de maintainer.</li>
+<li class="fragment">Deux personnes seront <span class="blue2"><strong>développeurs</strong></span></li>
 </ul></li>
 <li class="fragment">Le mainteneur crée un dépôt sur <code>Gitlab</code>. Il/Elle donne des droits au(x) développeur(s) du projet</li>
 <li class="fragment">Créer une copie locale (clone) du projet sur son <code>Z</code></li>
@@ -853,6 +854,10 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </li>
 <li><code>Commit</code> et <code>push</code> les changements</li>
 </ul>
+</section>
+<section id="résoudre-les-conflits-linterfacte-sublime-merge" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Résoudre les conflits : l’interfacte Sublime Merge</h2>
+<p><img data-src="img/conflict_sublime_merge.png"> - <code>OURS</code> (à gauche) = <code>MAIN</code> ou ce qui est sur le repo - <code>THEIRS</code> (à droite) = <code>BRANCHE</code> ou ce qui est en local - Au milieu la version qui sera gitée avec les conflits à arbitrer - Chosir la flèche de gauche pour conserver OURS / celle de droite pour conserver THEIRS - <code>Commit</code> et <code>push</code> les changements</p>
 </section>
 <section id="application-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Application 5</h2>
