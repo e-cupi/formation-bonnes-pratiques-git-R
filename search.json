@@ -273,11 +273,11 @@
     "text": "Résoudre les conflits : l’interface RStudio\n\n\nChoisir la version à conserver\n\nSupprimer les “marquages” du conflit\n\nCommit et push les changements"
   },
   {
-    "objectID": "slides/light.html#résoudre-les-conflits-linterfacte-sublime-merge",
-    "href": "slides/light.html#résoudre-les-conflits-linterfacte-sublime-merge",
+    "objectID": "slides/light.html#résoudre-les-conflits-linterface-sublime-merge",
+    "href": "slides/light.html#résoudre-les-conflits-linterface-sublime-merge",
     "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Résoudre les conflits : l’interfacte Sublime Merge",
-    "text": "Résoudre les conflits : l’interfacte Sublime Merge\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\nAu milieu la version qui sera gitée avec les conflits à arbitrer\nChosir la flèche de gauche pour conserver OURS / celle de droite pour conserver THEIRS\nCommit et push les changements"
+    "section": "Résoudre les conflits : l’interface Sublime Merge",
+    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\n\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver OURS / celle de droite pour THEIRS\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/light.html#application-5",
@@ -868,11 +868,11 @@
     "text": "Résoudre les conflits : l’interface RStudio\n\n\nChoisir la version à conserver\n\nSupprimer les “marquages” du conflit\n\nCommit et push les changements"
   },
   {
-    "objectID": "slides/complete.html#résoudre-les-conflits-linterfacte-sublime-merge",
-    "href": "slides/complete.html#résoudre-les-conflits-linterfacte-sublime-merge",
+    "objectID": "slides/complete.html#résoudre-les-conflits-linterface-sublime-merge",
+    "href": "slides/complete.html#résoudre-les-conflits-linterface-sublime-merge",
     "title": "Bonnes pratiques pour les projets statistiques",
-    "section": "Résoudre les conflits : l’interfacte Sublime Merge",
-    "text": "Résoudre les conflits : l’interfacte Sublime Merge\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\nAu milieu la version qui sera gitée avec les conflits à arbitrer\nChosir la flèche de gauche pour conserver OURS / celle de droite pour conserver THEIRS\nCommit et push les changements"
+    "section": "Résoudre les conflits : l’interface Sublime Merge",
+    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\n\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver OURS / celle de droite pour THEIRS\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/complete.html#application-5",
