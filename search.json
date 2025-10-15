@@ -277,7 +277,7 @@
     "href": "slides/light.html#résoudre-les-conflits-linterface-sublime-merge",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Résoudre les conflits : l’interface Sublime Merge",
-    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\n\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver OURS / celle de droite pour THEIRS\n\nCommit et push les changements"
+    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le local\nTHEIRS (à droite) = ORIGIN MAIN ou ce qui est sur le repo distant\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver local OURS / celle de droite pour le distant THEIRS\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/light.html#application-5",
@@ -872,7 +872,7 @@
     "href": "slides/complete.html#résoudre-les-conflits-linterface-sublime-merge",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Résoudre les conflits : l’interface Sublime Merge",
-    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le repo\n\nTHEIRS (à droite) = BRANCHE ou ce qui est en local\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver OURS / celle de droite pour THEIRS\n\nCommit et push les changements"
+    "text": "Résoudre les conflits : l’interface Sublime Merge\n\n\n\n\n\nOURS (à gauche) = MAIN ou ce qui est sur le local\nTHEIRS (à droite) = ORIGIN MAIN ou ce qui est sur le repo distant\n\nAu milieu la version qui sera gitée avec les conflits à arbitrer\n\nChoisir la flèche de gauche pour conserver local OURS / celle de droite pour le distant THEIRS\n\nCommit et push les changements"
   },
   {
     "objectID": "slides/complete.html#application-5",
