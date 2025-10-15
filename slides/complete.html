@@ -868,11 +868,11 @@ Voir le site <a href="https://datascience.gitlab-pages.insee.fr/site-documentair
 </div>
 <div class="callout-content">
 <ol type="1">
-<li class="fragment">On se place dans la même configuration que dans l’application précédente : un <span class="blue2"><strong>mainteneur</strong></span> et deux/trois <span class="blue2"><strong>développeurs</strong></span></li>
+<li class="fragment">On se place dans la même configuration que dans l’application précédente : un <span class="blue2"><strong>mainteneur</strong></span> et deux <span class="blue2"><strong>développeurs</strong></span></li>
 <li class="fragment">Le mainteneur modifie le contenu de son fichier, puis <code>commit</code> et <code>push</code> les modifications</li>
 <li class="fragment">Sans faire de <code>pull</code> préalable, les développeurs modifient également le contenu du fichier du [<strong>mainteneur</strong>], puis <code>commit</code> et <code>push</code> les modifications</li>
 <li class="fragment">Le <code>push</code> est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut <code>pull</code> les changements distants au préalable. Mais <strong>cette fois, le <code>pull</code> est également rejeté</strong> : il y a un <strong>conflit</strong> entre l’historique du projet distant et celui du projet local. <code>Git</code> nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.</li>
-<li class="fragment">Utiliser l’interface de <code>RStudio</code> pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis <code>commit</code>/<code>push</code> les modifications</li>
+<li class="fragment">Utiliser l’interface de <code>RStudio</code> ou de <code>Sublime Merge</code> pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis <code>commit</code>/<code>push</code> les modifications</li>
 <li class="fragment">Comme dans l’application précédente, seul le développeur le plus rapide parvient à <code>push</code>. Les autres doivent répéter l’opération.</li>
 </ol>
 </div>
