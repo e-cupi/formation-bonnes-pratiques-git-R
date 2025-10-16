@@ -59,7 +59,7 @@
 ![](img/conflict_sublime_merge.png){ width=100% }
 :::
 
-::: {.column width="50%" style="font-size:16px;"}
+::: {.column width="50%" style="font-size:22px;"}
 - `OURS` (à gauche) = `MAIN` ou ce qui est sur le local 
 - `THEIRS` (à droite) = `ORIGIN MAIN` ou ce qui est sur le repo distant  
 - Au milieu la version qui sera gitée avec les conflits à arbitrer  

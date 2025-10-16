@@ -152,7 +152,7 @@ dans 📁 `R/functions.R`
 
 - La [documentation officielle de `targets`](https://books.ropensci.org/targets/)
 
-- La [fiche UtilitR dédiée à `targets`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_targets)
+- La [fiche UtilitR dédiée à `targets`](https://book.utilitr.org/03_Fiches_thematiques/Fiche_targets.html)
 
 
 {{< include applications_r/_application5.qmd >}}
@@ -215,7 +215,7 @@ dans 📁 `R/functions.R`
 
 - La [documentation officielle de `R Markdown`](https://rmarkdown.rstudio.com/lesson-1.html)
 
-- La [fiche `UtilitR` sur `R Markdown`](https://www.book.utilitr.org/rmarkdown.html)
+- La [fiche `UtilitR` sur `R Markdown`](https://book.utilitr.org/03_Fiches_thematiques/Fiche_rmarkdown.html)
 
 - La [documentation officielle de `quarto`](https://quarto.org/)
 
