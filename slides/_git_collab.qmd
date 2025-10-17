@@ -37,7 +37,7 @@
 
 . . .
 
-- `Git` ne peut pas résoudre de lui même la divergence
+- `Git` ne peut pas résoudre de lui même la divergence.
 
 . . .
 
