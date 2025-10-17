@@ -263,7 +263,7 @@
     "href": "slides/light.html#divergence-dhistoriques-cas-compliqué",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Divergence d’historiques : cas compliqué",
-    "text": "Divergence d’historiques : cas compliqué\n\n\n\nGit ne peut pas résoudre de lui même la divergence\n\n\n\n\nL’utilisateur doit résoudre le conflit"
+    "text": "Divergence d’historiques : cas compliqué\n\n\n\nGit ne peut pas résoudre de lui même la divergence.\n\n\n\n\nL’utilisateur doit résoudre le conflit"
   },
   {
     "objectID": "slides/light.html#résoudre-les-conflits-linterface-rstudio",
@@ -858,7 +858,7 @@
     "href": "slides/complete.html#divergence-dhistoriques-cas-compliqué",
     "title": "Bonnes pratiques pour les projets statistiques",
     "section": "Divergence d’historiques : cas compliqué",
-    "text": "Divergence d’historiques : cas compliqué\n\n\n\nGit ne peut pas résoudre de lui même la divergence\n\n\n\n\nL’utilisateur doit résoudre le conflit"
+    "text": "Divergence d’historiques : cas compliqué\n\n\n\nGit ne peut pas résoudre de lui même la divergence.\n\n\n\n\nL’utilisateur doit résoudre le conflit"
   },
   {
     "objectID": "slides/complete.html#résoudre-les-conflits-linterface-rstudio",
